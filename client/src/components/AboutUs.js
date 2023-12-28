@@ -2,10 +2,10 @@ import React from "react";
 
 const AboutUs = () => {
   return (
-    <div className="bg-black text-gray-200 p-4 md:p-8">
+    <div className="bg-black text-gray-200 p-4 md:p-8 animate__animated animate__fadeIn animate__delay-1s">
       <div className="container mx-auto flex justify-center flex-col items-center">
-        <h2 className="text-4xl mb-4 text-center">About Our Lounge</h2>
-        <p className="mb-4 text-center text-lg">
+        <h2 className="text-4xl mb-4 text-center mt-8">About Our Lounge</h2>
+        <p className="mb-4 text-center text-lg font-bold">
           Welcome to The Dragon, Snapdragon Cannabis Co's innovative
           420-friendly lounge in Chattanooga. Redefining the cannabis
           experience, The Dragon offers a hangover-free journey with unique
@@ -22,9 +22,7 @@ const AboutUs = () => {
           Location and Hours
         </h3>
         <p className="text-center text-lg">
-          At the heart of our lounge is a commitment to providing a relaxing,
-          enjoyable atmosphere...
-          {/* Additional philosophy details */}
+        508 Broad Street, Chattanooga TN 37451
         </p>
         {/* Include any other sections as needed */}
       </div>

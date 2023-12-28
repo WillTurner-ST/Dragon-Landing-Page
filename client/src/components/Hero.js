@@ -9,6 +9,7 @@ const Hero = () => {
       {/* Background Image */}
       <img
         src={BackgroundImage}
+        className="animate__animated animate__fadeIn"
         alt="Background"
         style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover', zIndex: 1 }}
       />
@@ -25,6 +26,7 @@ const Hero = () => {
       >
         <img
           src={Logo}
+          className="animate__animated animate__zoomInDown animate__slow"
           alt="Logo"
           style={{ width: '400px', height: '400px' }} // Specific size for the logo
         />
