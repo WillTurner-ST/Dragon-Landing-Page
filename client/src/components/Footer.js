@@ -2,31 +2,29 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-white py-4 border-t-2 border-emerald-900">
-      <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
-        {/* Legal Link */}
-        <div className="flex flex-col">
-          <a href="/legal" className="mb-4 md:mb-0 text-sm hover:text-gray-300">
-            Legal
-          </a>
-          <a href="/legal" className="mb-4 md:mb-0 text-sm hover:text-gray-300 mt-2">
-            Careers
-          </a>
-        </div>
 
-        {/* Contact Information */}
-        <div>
-          <p className="text-sm mb-2">© 2024 The Dragon</p>
-          <p className="text-sm mb-2"> 508 Broad Street, Chattanooga, TN 37402</p>
-          <a
-            href="mailto:contact@snapdragonhemp.com"
-            className="text-sm hover:text-gray-300"
-          >
-            info@lounge.com
-          </a>
-        </div>
-      </div>
-    </footer>
+
+<footer class="bg-black rounded-lg shadow m-4">
+    <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+      <span class="text-sm text-white sm:text-center">© 2024 <a href="https://snapdragonhemp.com/" class="hover:underline">Snapdragon Cannabis Co™</a>. All Rights Reserved.
+    </span>
+    <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-white sm:mt-0">
+        <li>
+            <a href="/" class="hover:underline me-4 md:me-6 font-bold">About</a>
+        </li>
+        <li>
+            <a href="https://www.snapdragonhemp.com/privacy-policy/" class="hover:underline me-4 md:me-6 font-bold">Privacy Policy</a>
+        </li>
+        <li>
+            <a href="https://www.snapdragonhemp.com/terms-of-service/" class="hover:underline me-4 md:me-6 font-bold">Terms of Service</a>
+        </li>
+        <li>
+            <a href="mailto:contact@snapdragonhemp.com" class="hover:underline font-bold">Contact</a>
+        </li>
+    </ul>
+    </div>
+</footer>
+
   );
 };
 
