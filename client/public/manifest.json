@@ -8,15 +8,11 @@
       "type": "image/x-icon"
     },
     {
-      "src": "favicon.ico",
-      "type": "image/png",
-      "sizes": "image/x-icon"
-    },
-    {
-      "src": "favicon.ico",
-      "type": "image/png",
-      "sizes": "image/x-icon"
+      "src": "Dragon_Logo.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml"
     }
+
   ],
   "start_url": ".",
   "display": "standalone",
