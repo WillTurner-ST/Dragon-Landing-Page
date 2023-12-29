@@ -12,21 +12,30 @@ const Drinks = () => {
     <h2 className="text-4xl mb-4 text-center">Our Signature Drinks</h2>
     <div className="flex flex-col md:flex-row md:space-x-4 mb-6 items-center justify-center">
       <img src={Lemon} alt="Drink 1" className="w-full md:w-1/2 lg:w-1/3 h-58 mb-4 md:mb-0 md:mr-4 rounded-lg" />
-      <p className="w-full md:w-1/2 font-bold text-center text-base md:text-lg mt-4 md:mt-0">
-        Chill out with our Lemonade Haze, a refreshing concoction that's like a burst of sunshine in a glass. Infused with the zest of organic, hand-picked lemons and a subtle hint of premium cannabis essence, this drink is a perfect blend of tart and sweet. Each sip transports you to a sun-drenched lemon grove, offering a serene escape. Ideal for lazy afternoons and unwinding after a long day, it's your go-to for a relaxing, citrusy delight.
-      </p>
+      <div className="w-full md:w-1/2 mt-4 md:mt-0">
+        <h2 className="text-2xl text-center mb-2 tracking-wide">Lemonade Haze</h2>
+        <p className="text-center text-base md:text-lg font-bold">
+        Lemonade Haze is a sweet, tangy, caffeine-free fizzy lemonade with a hint of cannabis. It's a refreshing, uplifting beverage that's perfect for any occasion.
+        </p>
+      </div>
     </div>
     <div className="flex flex-col md:flex-row-reverse md:space-x-4 mb-6 items-center justify-center">
       <img src={Dam} alt="Drink 2" className="w-full md:w-1/2 lg:w-1/3 h-58 mb-4 md:mb-0 md:ml-4 rounded-lg" />
-      <p className="w-full md:w-1/2 font-bold text-center text-base md:text-lg mt-4 md:mt-0">
-      Dam Water is a handcrafted, infused soda with flavors of blueberry, coconut, and citrus with a whopping 50mg of RINS9 per 12oz can. Proceeds from these cans go towards the conservation and revitalization efforts of Lake Sturgeon in the Tennessee River. Dam Water contains 18mg of Caffeine per 12oz can.
-      </p>
+      <div className="w-full md:w-1/2 mt-4 md:mt-0">
+        <h2 className="text-2xl text-center mb-2 tracking-wide">Dam Water</h2>
+        <p className="text-center text-base md:text-lg font-bold">
+        Embrace tranquility with Dam Water; a handcrafted, infused soda with flavors of blueberry, coconut, and citrus. Proceeds from this beverage go towards the conservation and revitalization efforts of Lake Sturgeon in the Tennessee River.
+        </p>
+      </div>
     </div>
     <div className="flex flex-col md:flex-row md:space-x-4 items-center justify-center">
       <img src={Tap} alt="Drink 3" className="w-full md:w-1/2 lg:w-1/3 h-58 mb-4 md:mb-0 md:mr-4 rounded-lg" />
-      <p className="w-full md:w-1/2 font-bold text-center text-base md:text-lg mt-4 md:mt-0">
-        Dive into the vibrant world of Doobie Blast, a drink that's as lively as it is flavorful. A thrilling blend of cannabis energy and an exotic mix of tropical fruits, each gulp is a festival of taste. Imagine the wild, untamed flavors of mango, pineapple, and passionfruit dancing on your palate, accompanied by an invigorating cannabis kick. Perfect for the bold and adventurous, this drink is a ticket to an exciting, colorful journey. It's not just a beverage; it's an experience for those who dare to explore.
-      </p>
+      <div className="w-full md:w-1/2 mt-4 md:mt-0">
+        <h2 className="text-2xl text-center mb-2 tracking-wide">Doobie Blast</h2>
+        <p className="text-center text-base md:text-lg font-bold">
+        Doobie Blast is an iconic blue blast of citrus and tropical fruits, delivering a symphony of flavors that dance on your palate and your cannabinoid receptors.
+        </p>
+      </div>
     </div>
   </div>
 </div>
