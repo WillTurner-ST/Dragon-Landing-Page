@@ -19,7 +19,7 @@ const Drinks = () => {
     <div className="flex flex-col md:flex-row-reverse md:space-x-4 mb-6 items-center justify-center">
       <img src={Dam} alt="Drink 2" className="w-full md:w-1/2 lg:w-1/3 h-58 mb-4 md:mb-0 md:ml-4 rounded-lg" />
       <p className="w-full md:w-1/2 font-bold text-center text-base md:text-lg mt-4 md:mt-0">
-        Embrace tranquility with Dam Water, an exquisite beverage inspired by the serene waters of Amsterdam's canals. This elegant drink combines a gentle infusion of the finest cannabis with a smooth, velvety texture. Its understated flavors are designed to soothe and calm, making it an ideal choice for a peaceful evening. Whether you're unwinding by the fireplace or enjoying a quiet night under the stars, Dam Water is the epitome of relaxation in a bottle.
+      Dam Water is a handcrafted, infused soda with flavors of blueberry, coconut, and citrus with a whopping 50mg of RINS9 per 12oz can. Proceeds from these cans go towards the conservation and revitalization efforts of Lake Sturgeon in the Tennessee River. Dam Water contains 18mg of Caffeine per 12oz can.
       </p>
     </div>
     <div className="flex flex-col md:flex-row md:space-x-4 items-center justify-center">
