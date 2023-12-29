@@ -25,7 +25,7 @@ const Drinks = () => {
     <div className="flex flex-col md:flex-row md:space-x-4 items-center justify-center">
       <img src={Tap} alt="Drink 3" className="w-full md:w-1/2 lg:w-1/3 h-58 mb-4 md:mb-0 md:mr-4 rounded-lg" />
       <p className="w-full md:w-1/2 font-bold text-center text-base md:text-lg mt-4 md:mt-0">
-        Dive into the vibrant world of Dooie Blast, a drink that's as lively as it is flavorful. A thrilling blend of cannabis energy and an exotic mix of tropical fruits, each gulp is a festival of taste. Imagine the wild, untamed flavors of mango, pineapple, and passionfruit dancing on your palate, accompanied by an invigorating cannabis kick. Perfect for the bold and adventurous, this drink is a ticket to an exciting, colorful journey. It's not just a beverage; it's an experience for those who dare to explore.
+        Dive into the vibrant world of Doobie Blast, a drink that's as lively as it is flavorful. A thrilling blend of cannabis energy and an exotic mix of tropical fruits, each gulp is a festival of taste. Imagine the wild, untamed flavors of mango, pineapple, and passionfruit dancing on your palate, accompanied by an invigorating cannabis kick. Perfect for the bold and adventurous, this drink is a ticket to an exciting, colorful journey. It's not just a beverage; it's an experience for those who dare to explore.
       </p>
     </div>
   </div>
