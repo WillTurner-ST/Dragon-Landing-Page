@@ -18,16 +18,16 @@ const AboutUs = () => {
           cannabis in a community-focused, euphoric setting.
           {/* More description here */}
         </p>
-        <h3 className="text-3xl font-bold mb-2 text-center mt-5">Location</h3>
+        <h2 className="text-3xl mb-2 text-center mt-5">Location</h2>
         <p className="text-center text-lg font-bold">
           508 Broad Street, Chattanooga TN 37451
         </p>
-        <h3 className="text-3xl font-bold mb-2 text-center mt-5">Hours</h3>
+        <h2 className="text-3xl mb-2 text-center mt-5">Hours</h2>
         <p className="text-center text-lg font-bold">
-          SUNDAY - THURSDAY: 12 - 10PM 
+          Sunday - Thursday: 12 - 10PM 
         </p>
         <p className="text-center text-lg font-bold">
-          FRIDAY - SATURDAY: Noon - Midnight
+          Friday - Saturday: Noon - Midnight
         </p>
         {/* Include any other sections as needed */}
       </div>

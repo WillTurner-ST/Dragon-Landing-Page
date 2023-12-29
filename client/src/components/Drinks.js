@@ -1,6 +1,6 @@
 import React from 'react';
 import Dam from '../assets/drink.png';
-import Tap from '../assets/tap.png';
+import Tap from '../assets/tap.jpg';
 import Lemon from '../assets/lemon.png';
 
 const Drinks = () => {
