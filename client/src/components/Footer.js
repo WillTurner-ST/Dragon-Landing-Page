@@ -22,7 +22,7 @@ const Footer = () => {
             <a href="mailto:contact@snapdragonhemp.com" class="hover:underline font-bold">Contact us</a>
         </li>
             <li>
-            <a href='tel:423-456-7890' class="hover:underline font-bold ml-2"> (423) 954-0710</a>
+            <a href='tel:423-954-0710' class="hover:underline font-bold ml-2"> (423) 954-0710</a>
         </li>
     </ul>
     </div>
