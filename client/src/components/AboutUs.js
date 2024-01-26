@@ -24,10 +24,10 @@ const AboutUs = () => {
         </p>
         <h2 className="text-3xl mb-2 text-center mt-5">Hours</h2>
         <p className="text-center text-lg font-bold">
-          Sunday - Thursday: 12 - 10PM 
+          Sunday - Thursday: 12PM - 10PM 
         </p>
         <p className="text-center text-lg font-bold">
-          Friday - Saturday: Noon - Midnight
+          Friday - Saturday: 12PM - 12AM
         </p>
         {/* Include any other sections as needed */}
       </div>
