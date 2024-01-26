@@ -19,7 +19,10 @@ const Footer = () => {
             <a href="https://www.snapdragonhemp.com/terms-of-service/" class="hover:underline me-4 md:me-6 font-bold">Terms of Service</a>
         </li>
         <li>
-            <a href="mailto:contact@snapdragonhemp.com" class="hover:underline font-bold">Contact</a>
+            <a href="mailto:contact@snapdragonhemp.com" class="hover:underline font-bold">Contact us</a>
+        </li>
+            <li>
+            <a class="hover:underline font-bold ml-2"> (423) 954-0710</a>
         </li>
     </ul>
     </div>
