@@ -17,7 +17,6 @@ const Menu = () => {
     <Nav/>
     <MenuAbout/>
     <DrinkMenu />
-    <DabMenu/>
 </div>
   )
 }
