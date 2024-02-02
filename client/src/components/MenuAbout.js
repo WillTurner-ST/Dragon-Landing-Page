@@ -1,16 +1,6 @@
-import React from "react";
-import { useEffect } from "react";
-import { useNavigate} from "react-router-dom";
+import React from 'react'
 
-const AboutUs = () => {
-
-const navigate = useNavigate()
-
-const GoToMenu = () => {
-  navigate('/menu')
-}
-
-
+const MenuAbout = () => {
   return (
     <div className="bg-black text-gray-200 p-4 md:p-8 animate__animated animate__fadeIn animate__delay-1s">
       <div className="container mx-auto flex justify-center flex-col items-center">
@@ -39,12 +29,9 @@ const GoToMenu = () => {
         <p className="text-center text-lg font-bold">
           Friday - Saturday: 12PM - 12AM
         </p>
-        <button onClick={GoToMenu} className="mt-10 w-1/3 bg-SnapGreen hover:from-green-500 hover:to-purple-500 text-white font-bold py-2 px-4 rounded hover:scale-125">
-  View Our Menu
-</button>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default AboutUs;
+export default MenuAbout

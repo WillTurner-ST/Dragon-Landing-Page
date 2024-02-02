@@ -3,7 +3,6 @@ import Hero from '../components/Hero'
 import AboutUs from '../components/AboutUs'
 import Drinks from '../components/Drinks'
 import Footer from '../components/Footer'
-import Menu from '../components/Menu'
 import '../App.css'
 
 const Home = () => {
@@ -11,7 +10,6 @@ const Home = () => {
     <div>
         <Hero/>
         <AboutUs/>
-        <Menu/>
         <Drinks/>
         <Footer/>
     </div>
