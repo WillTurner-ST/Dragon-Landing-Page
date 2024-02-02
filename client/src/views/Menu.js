@@ -1,6 +1,5 @@
 import React from 'react'
 import DrinkMenu from '../components/DrinkMenu'
-import DabMenu from '../components/DabMenu'
 import Nav from '../components/Nav'
 import MenuAbout from '../components/MenuAbout'
 import { useEffect } from 'react'
