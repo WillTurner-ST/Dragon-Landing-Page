@@ -2,6 +2,7 @@ import React from 'react'
 import DrinkMenu from '../components/DrinkMenu'
 import Nav from '../components/Nav'
 import MenuAbout from '../components/MenuAbout'
+import Footer from '../components/Footer'
 import { useEffect } from 'react'
 
 const Menu = () => {
@@ -16,6 +17,7 @@ const Menu = () => {
     <Nav/>
     <MenuAbout/>
     <DrinkMenu />
+    <Footer/>
 </div>
   )
 }
