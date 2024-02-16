@@ -1,7 +1,6 @@
 import React from 'react'
 import DrinkMenu from '../components/DrinkMenu'
-import Nav from '../components/Nav'
-import MenuAbout from '../components/MenuAbout'
+import NavMain from '../components/NavMain'
 import Footer from '../components/Footer'
 import { useEffect } from 'react'
 
@@ -13,9 +12,8 @@ const Menu = () => {
       }, []);
 
   return (
-<div className='w-3/4 md:w-2/4 flex flex-col mx-auto items-center'>
-    <Nav/>
-    <MenuAbout/>
+<div>
+    <NavMain/>
     <DrinkMenu />
     <Footer/>
 </div>
