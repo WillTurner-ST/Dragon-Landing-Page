@@ -76,7 +76,7 @@ const NavMain = ({ aboutRef }) => {
               </Link>
             </li>
             <li>
-              <Link onClick={scrollToBottom}>
+              <Link to='https://www.snapdragonhemp.com/guest-release/'>
               <button type="button" class="focus:outline-none text-white bg-transparent  focus:ring-1 focus:ring-SnapGreen font-bold rounded-lg text-md px-1 py-2.5 me-2 mb-2  hover:bg-transparent font-bold">Waiver</button>
               </Link>
             </li>

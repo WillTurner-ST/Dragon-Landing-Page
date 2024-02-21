@@ -1,5 +1,6 @@
 // Hero.js
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect} from 'react';
+import { Link } from "react-router-dom";
 import Image1 from '../assets/image1.jpg'; // Replace with your actual image path
 import Image2 from '../assets/image2.jpg'; // Replace with your actual image path
 import Image3 from '../assets/image3.jpg'; // Replace with your actual image path
@@ -31,9 +32,11 @@ const Hero = () => {
           UNLEASH THE DRAGON
         </h1>
         <p className='text-white font-bold mb-6'>Experience The Dragon – Chattanooga's pinnacle of cannabis culture, where every visit is a journey to euphoria without the hangover.</p>
+        <Link to='/menu'>
         <a href="/menu" className="inline-block bg-SnapGreen text-white rounded-md px-5 py-3 uppercase font-bold shadow-md hover:bg-green-600 transition-colors duration-300">
           View our Menu
         </a>
+        </Link>
       </div>
     </section>
   );
