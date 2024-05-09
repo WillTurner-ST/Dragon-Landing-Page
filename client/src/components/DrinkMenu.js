@@ -1,16 +1,15 @@
-import React from 'react'
-import DabL from '../assets/DabL.png'
-import DabR from '../assets/DabR.png'
-import MenuL from '../assets/MenuL.png'
-import MenuR from '../assets/MenuR.png'
-import FoodMenu from '../assets/FoodMenu.png'
+import React from "react";
+import DabL from "../assets/DabL.png";
+import DabR from "../assets/DabR.png";
+import MenuL from "../assets/MenuL.png";
+import MenuR from "../assets/MenuR.png";
+import FoodMenu from "../assets/FoodMenu.png";
 
 const DrinkMenu = () => {
-
   return (
     <div className="container mx-auto p-4">
-              {/* Food Menu Heading and Images */}
-              <h2 className="text-4xl text-white text-center mb-4">Food Menu</h2>
+      {/* Food Menu Heading and Images */}
+      <h2 className="text-4xl text-white text-center mb-4">Food Menu</h2>
       <div className="items-center">
         <div className="max-w-md mx-auto">
           <img src={FoodMenu} alt="Drink Menu Left" className="w-full" />
@@ -39,7 +38,7 @@ const DrinkMenu = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default DrinkMenu
+export default DrinkMenu;
