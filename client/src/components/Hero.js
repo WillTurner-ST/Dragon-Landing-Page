@@ -2,10 +2,9 @@
 import React, { useState, useEffect} from 'react';
 import { Link } from "react-router-dom";
 import Image1 from '../assets/image1.jpg'; // Replace with your actual image path
-import Image2 from '../assets/image2.jpg'; // Replace with your actual image path
 import Image3 from '../assets/image3.jpg'; // Replace with your actual image path
 
-const images = [Image1, Image2, Image3];
+const images = [Image1, Image3];
 
 const Hero = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
