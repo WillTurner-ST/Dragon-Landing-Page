@@ -1,4 +1,4 @@
-import React, { useRef} from 'react';
+import React, { useRef } from 'react';
 
 import Hero from '../components/Hero';
 import AboutUs from '../components/AboutUs';
@@ -14,7 +14,7 @@ const Home = () => {
     <div>
       <NavMain aboutRef={aboutRef} />
       <Hero />
-      <div ref={aboutRef}><AboutUs /></div>
+      <div ref={aboutRef}><AboutUs /></div> 
       <Drinks />
       <Footer />
     </div>
