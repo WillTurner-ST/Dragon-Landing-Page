@@ -17,7 +17,7 @@ const DrinkMenu = () => {
   return (
     <div className="container mx-auto p-4">
     {/* Dab Menu Card */}
-    <div className="shadow-gray-500 border border-gray-600 rounded-lg shadow-lg p-5 mb-20">
+    <div className="p-5 mb-20">
       <h2 className="text-4xl text-white text-center mb-4">Dab Menu</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
         <div className="max-w-md mx-auto">
@@ -36,7 +36,7 @@ const DrinkMenu = () => {
     </div>
 
     {/* Drink Menu Card */}
-    <div className="shadow-gray-500 border border-gray-600 rounded-lg shadow-lg p-5 mb-20">
+    <div className="border-t border-SnapGreen p-5 mb-20">
       <h2 className="text-4xl text-white text-center mb-4">Drink Menu</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8 items-center">
         <div className="max-w-md mx-auto">
@@ -49,7 +49,7 @@ const DrinkMenu = () => {
     </div>
 
     {/* Food Menu Card */}
-    <div className="shadow-gray-500 border border-gray-600 rounded-lg shadow-lg p-5 mb-20">
+    <div className="border-t border-SnapGreen p-5 mb-20">
       <h2 className="text-4xl text-white text-center mb-4">Munchies</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8 items-center">
         <div className="max-w-md mx-auto">
