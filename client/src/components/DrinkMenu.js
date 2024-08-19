@@ -1,16 +1,16 @@
 import React from "react";
-import Dab1L from "../assets/Dab1L.png";
-import Dab1R from "../assets/Dab1R.png";
-import Dab2L from "../assets/Dab2L.png";
-import Dab2R from "../assets/Dab2R.png";
-import DrinkL from "../assets/DrinkL.png";
-import DrinkR from "../assets/DrinkR.png";
-import ShareL from "../assets/ShareL.png";
-import ShareR from "../assets/ShareR.png";
-import Share2L from "../assets/Share2L.png";
-import Share2R from "../assets/Share2R.png";
-import SideL from "../assets/SideL.png";
-import SideR from "../assets/SideR.png";
+import Dab1L from "../assets/Dab1L-min.png";
+import Dab1R from "../assets/Dab1R-min.png";
+import Dab2L from "../assets/Dab2L-min.png";
+import Dab2R from "../assets/Dab2R-min.png";
+import DrinkL from "../assets/DrinkL-min.png";
+import DrinkR from "../assets/DrinkR-min.png";
+import ShareL from "../assets/ShareL-min.png";
+import ShareR from "../assets/ShareR-min.png";
+import Share2L from "../assets/Share2L-min.png";
+import Share2R from "../assets/Share2R-min.png";
+import SideL from "../assets/SideL-min.png";
+import SideR from "../assets/SideR-min.png";
 
 
 const DrinkMenu = () => {
