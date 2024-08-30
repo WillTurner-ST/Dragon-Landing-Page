@@ -16,9 +16,33 @@ import SideR from "../assets/SideR-min.png";
 const DrinkMenu = () => {
   return (
     <div className="container mx-auto p-4">
+        {/* Food Menu Card */}
+     <div className="border-t border-SnapGreen p-5 mb-20">
+      <h2 className="text-4xl text-white text-center mb-4">Munchies</h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8 items-center">
+        <div className="max-w-md mx-auto">
+          <img src={ShareL} alt="Drink Menu Left" className="w-full rounded-lg" />
+        </div>
+        <div className="max-w-md mx-auto">
+          <img src={ShareR} alt="Drink Menu Right" className="w-full rounded-lg" />
+        </div>
+        <div className="max-w-md mx-auto">
+          <img src={Share2L} alt="Drink Menu Left" className="w-full rounded-lg" />
+        </div>
+        <div className="max-w-md mx-auto">
+          <img src={Share2R} alt="Drink Menu Right" className="w-full rounded-lg" />
+        </div>
+        <div className="max-w-md mx-auto">
+          <img src={SideL} alt="Drink Menu Left" className="w-full rounded-lg" />
+        </div>
+        <div className="max-w-md mx-auto">
+          <img src={SideR} alt="Drink Menu Right" className="w-full rounded-lg" />
+        </div>
+      </div>
+    </div>
     {/* Dab Menu Card */}
     <div className="p-5 mb-20">
-      <h2 className="text-4xl text-white text-center mb-4">Dab Menu</h2>
+      <h2 className="text-4xl text-white text-center mb-4 border-t border-SnapGreen">Dab Menu</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
         <div className="max-w-md mx-auto">
           <img src={Dab1L} alt="Dab Menu Left" className="w-full rounded-lg" />
@@ -48,30 +72,8 @@ const DrinkMenu = () => {
       </div>
     </div>
 
-    {/* Food Menu Card */}
-    <div className="border-t border-SnapGreen p-5 mb-20">
-      <h2 className="text-4xl text-white text-center mb-4">Munchies</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8 items-center">
-        <div className="max-w-md mx-auto">
-          <img src={ShareL} alt="Drink Menu Left" className="w-full rounded-lg" />
-        </div>
-        <div className="max-w-md mx-auto">
-          <img src={ShareR} alt="Drink Menu Right" className="w-full rounded-lg" />
-        </div>
-        <div className="max-w-md mx-auto">
-          <img src={Share2L} alt="Drink Menu Left" className="w-full rounded-lg" />
-        </div>
-        <div className="max-w-md mx-auto">
-          <img src={Share2R} alt="Drink Menu Right" className="w-full rounded-lg" />
-        </div>
-        <div className="max-w-md mx-auto">
-          <img src={SideL} alt="Drink Menu Left" className="w-full rounded-lg" />
-        </div>
-        <div className="max-w-md mx-auto">
-          <img src={SideR} alt="Drink Menu Right" className="w-full rounded-lg" />
-        </div>
-      </div>
-    </div>
+
+   
   </div>
   );
 };
