@@ -5,12 +5,6 @@ import Dab2L from "../assets/Dab2L-min.png";
 import Dab2R from "../assets/Dab2R-min.png";
 import DrinkL from "../assets/DrinkL-min.png";
 import DrinkR from "../assets/DrinkR-min.png";
-import SideL from "../assets/SideL-min.png";
-import SideR from "../assets/SideR-min.png";
-import ShareL from "../assets/ShareL-min.png";
-import ShareR from "../assets/ShareR-min.png";
-import Share2L from "../assets/Share2L-min.png";
-import Share2R from "../assets/Share2R-min.png";
 import DragonHour from "../assets/DragonHour.png";
 
 const DrinkMenu = () => {
