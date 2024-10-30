@@ -5,7 +5,7 @@ const CalendarEvents = () => {
   const [events, setEvents] = useState([]);
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [selectedEvent, setSelectedEvent] = useState(null);
-  
+
   // Use environment variables
   const API_KEY = process.env.REACT_APP_GOOGLE_CALENDAR_API_KEY;
   const CALENDAR_ID = process.env.REACT_APP_GOOGLE_CALENDAR_ID;
@@ -18,7 +18,14 @@ const CalendarEvents = () => {
         );
         const data = await response.json();
         if (data.items) {
-          const sortedEvents = data.items.sort(
+          // Filter out past events
+          const now = new Date();
+          const upcomingEvents = data.items.filter(event => {
+            const eventDate = new Date(event.start.dateTime || event.start.date);
+            return eventDate >= now; // Keep only upcoming events
+          });
+
+          const sortedEvents = upcomingEvents.sort(
             (a, b) =>
               new Date(a.start.dateTime || a.start.date) -
               new Date(b.start.dateTime || b.start.date)
@@ -90,14 +97,14 @@ const CalendarEvents = () => {
 
       {Object.entries(groupedEvents).map(([date, events]) => (
         <div key={date} className="w-full max-w-6xl mb-8">
-          <h3 className="text-3xl text-white mb-4 border-b border-SnapGreen pb-2">
+          <h3 className="text-3xl text-white mb-4 border-b border-[#5f6813] pb-2">
             {date}
           </h3>
 
           {events.map((event) => (
             <div
               key={event.id}
-              className="bg-[#0D0D0D] p-5 rounded-lg shadow-md mb-4 border border-SnapGreen hover:shadow-lg transform transition hover:-translate-y-1 cursor-pointer"
+              className="bg-[#0D0D0D] p-5 rounded-lg shadow-md mb-4 border border-[#5f6813] hover:shadow-lg transform transition hover:-translate-y-1 cursor-pointer"
               onClick={() => openModal(event)}
             >
               <h2 className="text-2xl mb-2 text-white">{event.summary}</h2>
