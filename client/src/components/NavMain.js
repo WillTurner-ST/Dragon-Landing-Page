@@ -42,13 +42,48 @@ const NavMain = () => {
           </svg>
         </button>
 
+        {/* Desktop Menu */}
+        <div className="hidden md:flex md:w-auto">
+          <ul className="font-bold flex space-x-8 p-4">
+            <li>
+              <Link to="/" className="text-white">
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link to="/menu" className="text-white">
+                Menu
+              </Link>
+            </li>
+            <li>
+              <Link to="/events" className="text-white">
+                Events
+              </Link>
+            </li>
+            <li>
+              <Link to="/gallery" className="text-white">
+                Gallery
+              </Link>
+            </li>
+            <li>
+              <a
+                href="https://www.snapdragonhemp.com/guest-release/"
+                className="text-white"
+              >
+                Waiver
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        {/* Mobile Dropdown */}
         <div
           className={`${
             isOpen ? "block" : "hidden"
-          } absolute top-full right-0 w-1/4 bg-black z-50 md:flex md:w-auto rounded-b-lg`} // Added rounded-b-lg here
+          } absolute top-full right-0 w-1/4 bg-black z-50 rounded-b-lg`} // Removed md:flex for mobile
           id="navbar-default"
         >
-          <ul className="font-bold flex flex-col p-2 mt-1 space-y-2 md:flex-row md:space-x-8 md:mt-0 md:p-0">
+          <ul className="font-bold flex flex-col p-2 mt-1 space-y-2">
             <li>
               <Link to="/" className="text-white">
                 Home
