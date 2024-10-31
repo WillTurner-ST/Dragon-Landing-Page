@@ -119,7 +119,7 @@ const CalendarEvents = () => {
 
       {modalIsOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center z-50 px-4">
-          <div className="bg-[#0D0D0D] border border-SnapGreen rounded-lg p-6 w-full max-w-md">
+          <div className="bg-[#0D0D0D] rounded-lg p-6 w-full max-w-md">
             <h2 className="text-3xl mb-4 text-white">
               {selectedEvent.summary}
             </h2>
@@ -162,7 +162,7 @@ const CalendarEvents = () => {
 
             <button
               onClick={closeModal}
-              className="mt-4 w-full px-4 py-2 bg-SnapGreen text-white rounded-lg hover:bg-red-900 transition"
+              className="mt-4 w-full px-4 py-2 bg-SnapGreen text-white font-bold rounded-lg hover:bg-red-900 transition"
             >
               Close
             </button>

@@ -1,61 +1,113 @@
-import React, { useEffect, useState } from 'react';
-import axios from 'axios';
+import React, { useState } from 'react';
+import Grid1 from '../assets/GridImages/Grid_1.jpg';
+import Grid2 from '../assets/GridImages/Grid_2.jpg';
+import Grid3 from '../assets/GridImages/Grid_3.jpg';
+import Grid4 from '../assets/GridImages/Grid_4.jpg';
+import Grid5 from '../assets/GridImages/Grid_5.jpg';
+import Grid6 from '../assets/GridImages/Grid_6.jpg';
+import Grid7 from '../assets/GridImages/Grid_7.jpg';
+import Grid8 from '../assets/GridImages/Grid_8.jpg';
+import Grid9 from '../assets/GridImages/Grid_9.jpg';
+import Grid10 from '../assets/GridImages/Grid_10.jpg';
+import Grid11 from '../assets/GridImages/Grid_11.jpg';
+import Grid12 from '../assets/GridImages/Grid_12.jpg';
+
+
+// Continue importing images as needed
 
 const GalleryGrid = () => {
-  const [images, setImages] = useState([]);
-  const [loading, setLoading] = useState(true);
+  const images = [Grid1, Grid2, Grid3, Grid4, Grid5, Grid6, Grid7, Grid8, Grid9, Grid10, Grid11, Grid12];
+  const [selectedImage, setSelectedImage] = useState(null);
+  const [isClosing, setIsClosing] = useState(false);
 
-  const folderId = process.env.REACT_APP_GOOGLE_DRIVE_FOLDER_ID; // Folder ID from .env
-  const apiKey = process.env.REACT_APP_GOOGLE_CALENDAR_API_KEY; // API Key from .env
-
-  useEffect(() => {
-    const fetchImages = async () => {
-      try {
-        const response = await axios.get(
-          `https://www.googleapis.com/drive/v3/files?q='${folderId}'+in+parents&fields=files(id,name,mimeType)&key=${apiKey}`
-        );
-
-        console.log(response.data); // Log the response to debug
-
-        // Filter to get image files
-        const imageFiles = response.data.files.filter(file =>
-          file.mimeType.startsWith('image/')
-        );
-
-        // Map to embeddable links
-        const imageLinks = imageFiles.map(file => ({
-          id: file.id,
-          name: file.name,
-          url: `https://drive.google.com/uc?id=${file.id}`, // Convert to embeddable link
-        }));
-
-        setImages(imageLinks);
-      } catch (error) {
-        console.error('Error fetching images:', error);
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    fetchImages();
-  }, [folderId, apiKey]); // Include apiKey in dependencies
-
-  if (loading) return <div className="text-white">Loading images...</div>;
+  const closeLightbox = () => {
+    setIsClosing(true);
+    setTimeout(() => {
+      setSelectedImage(null);
+      setIsClosing(false);
+    }, 300); // Duration of the fade-out effect
+  };
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-black py-8 px-4">
-      <h2 className="text-4xl font-semibold mb-10 text-center text-white">Gallery</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 w-full max-w-6xl">
-        {images.map(image => (
-          <div key={image.id} className="rounded-lg overflow-hidden shadow-md">
+    <div className="max-w-7xl mx-auto px-6 md:px-12 py-10">
+      {/* Title */}
+      <h2 className="text-5xl md:text-5xl text-center text-white mb-8">Gallery</h2>
+      
+      {/* Grid */}
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+        {images.map((image, index) => (
+          <div
+            key={index}
+            className={`overflow-hidden rounded-lg shadow-lg transform transition duration-300 hover:scale-105 ${
+              index % 2 === 0 ? 'mt-4' : 'mb-4'
+            }`}
+          >
             <img
-              src={image.url}
-              alt={image.name}
-              className="w-full h-auto object-cover hover:scale-105 transition-transform duration-200"
+              onClick={() => setSelectedImage(image)}
+              className="h-auto w-full object-cover cursor-pointer"
+              style={{
+                height: `${150 + (index % 3) * 50}px`,
+              }}
+              src={image}
+              alt='Past Events'
             />
           </div>
         ))}
       </div>
+
+      {/* Lightbox */}
+      {selectedImage && (
+        <div
+          className={`fixed inset-0 flex items-center justify-center bg-black bg-opacity-75 z-50 transition-opacity duration-300 ${
+            isClosing ? 'fade-out' : 'fade-in'
+          }`}
+          onClick={closeLightbox}
+        >
+          <div className="relative flex items-center justify-center p-4"> {/* Flexbox to center the image */}
+            <button
+              onClick={closeLightbox}
+              className="absolute top-4 right-4 text-white text-3xl font-bold cursor-pointer z-60"
+            >
+              &times;
+            </button>
+            <img
+              src={selectedImage}
+              alt="Enlarged view"
+              className="max-w-[80%] max-h-[80%] rounded-lg shadow-lg transition-none" // Adjusted max-width and max-height
+              style={{ pointerEvents: 'none' }} // Prevents hover effect on the enlarged image
+            />
+          </div>
+        </div>
+      )}
+      <style jsx>{`
+        .fade-in {
+          opacity: 0;
+          animation: fadeIn 0.5s forwards;
+        }
+        
+        .fade-out {
+          opacity: 1;
+          animation: fadeOut 0.5s forwards;
+        }
+
+        @keyframes fadeIn {
+          from {
+            opacity: 0;
+          }
+          to {
+            opacity: 1;
+          }
+        }
+
+        @keyframes fadeOut {
+          from {
+            opacity: 1;
+          }
+          to {
+            opacity: 0;
+          }
+        }
+      `}</style>
     </div>
   );
 };

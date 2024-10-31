@@ -2,9 +2,8 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Logo from "../assets/Dragon_Logo.png";
 
-const NavMain = ({ aboutRef }) => {
+const NavMain = () => {
   const [isOpen, setIsOpen] = useState(false);
-
 
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
@@ -12,7 +11,7 @@ const NavMain = ({ aboutRef }) => {
 
   return (
     <nav className="bg-black">
-      <div className="max-w-screen-xl flex items-center justify-between mx-auto p-4">
+      <div className="max-w-screen-xl flex items-center justify-between mx-auto p-4 relative">
         <a
           href="https://snapdragonhemp.com/"
           className="flex items-center space-x-3"
@@ -46,10 +45,10 @@ const NavMain = ({ aboutRef }) => {
         <div
           className={`${
             isOpen ? "block" : "hidden"
-          } w-full md:flex md:w-auto`}
+          } absolute top-full right-0 w-1/4 bg-black z-50 md:flex md:w-auto rounded-b-lg`} // Added rounded-b-lg here
           id="navbar-default"
         >
-          <ul className="font-bold flex flex-col p-4 mt-4 border rounded-lg bg-black md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-black">
+          <ul className="font-bold flex flex-col p-2 mt-1 space-y-2 md:flex-row md:space-x-8 md:mt-0 md:p-0">
             <li>
               <Link to="/" className="text-white">
                 Home
@@ -63,6 +62,11 @@ const NavMain = ({ aboutRef }) => {
             <li>
               <Link to="/events" className="text-white">
                 Events
+              </Link>
+            </li>
+            <li>
+              <Link to="/gallery" className="text-white">
+                Gallery
               </Link>
             </li>
             <li>

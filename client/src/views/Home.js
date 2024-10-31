@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React from 'react';
 
 import Hero from '../components/Hero';
 import AboutUs from '../components/AboutUs';
@@ -8,13 +8,12 @@ import NavMain from '../components/NavMain';
 import '../App.css';
 
 const Home = () => {
-  const aboutRef = useRef(null);
 
   return (
     <div>
-      <NavMain aboutRef={aboutRef} />
-      <Hero />
-      <div ref={aboutRef}><AboutUs /></div> 
+      <NavMain/>
+      <Hero/>
+      <div><AboutUs/></div> 
       <Drinks />
       <Footer />
     </div>
