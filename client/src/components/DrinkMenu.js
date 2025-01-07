@@ -3,8 +3,10 @@ import Dab1L from "../assets/Dab1L-min.png";
 import Dab1R from "../assets/Dab1R-min.png";
 import Dab2L from "../assets/Dab2L-min.png";
 import Dab2R from "../assets/Dab2R-min.png";
-import DrinkL from "../assets/DrinkL-min.png";
-import DrinkR from "../assets/DrinkR-min.png";
+import Drink1 from "../assets/newmenu1.png";
+import Drink2 from "../assets/newmenu2.png";
+import Drink3 from "../assets/newmenu3.png";
+import Drink4 from "../assets/newmenu4.png";
 import DragonHour from "../assets/DragonHour.png";
 
 const DrinkMenu = () => {
@@ -115,14 +117,28 @@ const DrinkMenu = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8 items-center">
           <div className="max-w-md mx-auto">
             <img
-              src={DrinkL}
+              src={Drink1}
               alt="Drink Menu Left"
               className="w-full rounded-lg"
             />
           </div>
           <div className="max-w-md mx-auto">
             <img
-              src={DrinkR}
+              src={Drink2}
+              alt="Drink Menu Right"
+              className="w-full rounded-lg"
+            />
+          </div>
+          <div className="max-w-md mx-auto">
+            <img
+              src={Drink3}
+              alt="Drink Menu Right"
+              className="w-full rounded-lg"
+            />
+          </div>
+          <div className="max-w-md mx-auto">
+            <img
+              src={Drink4}
               alt="Drink Menu Right"
               className="w-full rounded-lg"
             />
