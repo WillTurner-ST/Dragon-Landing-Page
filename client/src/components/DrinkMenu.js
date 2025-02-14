@@ -1,152 +1,236 @@
-import React from "react";
-import Dab1L from "../assets/Dab1L-min.png";
-import Dab1R from "../assets/Dab1R-min.png";
-import Dab2L from "../assets/Dab2L-min.png";
-import Dab2R from "../assets/Dab2R-min.png";
-import Drink1 from "../assets/newmenu1.png";
-import Drink2 from "../assets/newmenu2.png";
-import Drink3 from "../assets/newmenu3.png";
-import Drink4 from "../assets/newmenu4.png";
-import DragonHour from "../assets/DragonHour.png";
+export default function DrinkMenu() {
+  const menuSections = [
+    {
+      title: "ON-TAP",
+      subtitle: "ELEVATE IT! 10MG-$3 | 25MG-$6 | 50MG-$9",
+      items: [
+        { 
+          name: "Draft Drinks", 
+          description: "Pink Lemonade, Cream Soda, Dam Water, Doobie Blast, Rootbeer, or Orange Soda",
+          prices: [
+            { size: "12oz", mg: "10MG", price: "$6" },
+            { size: "16oz", mg: "13MG", price: "$8" }
+          ]
+        },
+        { 
+          name: "Draft Flight", 
+          description: "Choose any 4 of our drafts. Pink Lemonade, Cream Soda, Dam Water, Doobie Blast, Rootbeer, or Orange Soda",
+          prices: [
+            { size: "24oz", mg: "20MG", price: "$10" }
+          ]
+        },
+        { 
+          name: "Nitro Cold Brew", 
+          description: "50MG blend of: THCV/CBD/CBG. Add coconut milk or half & half and your choice of simple syrup: Vanilla, Hazelnut, Caramel, or Butterscotch",
+          prices: [
+            { size: "12oz", mg: "50MG", price: "$6" },
+            { size: "16oz", mg: "100MG", price: "$10" }
+          ]
+        }
+      ]
+    },
+    {
+      title: "Warmup",
+      subtitle: "Keep it virgin OR ELEVATE IT! 10MG-$3 | 25MG-$6 | 50MG-$9",
+      items: [
+        { 
+          name: "Winter Wonderland", 
+          description: "Peppermint and vanilla simple syrup, whipped cream, topped with crushed candy canes.",
+          prices: [
+            { size: "", mg: "", price: "$5" }
+          ]
+        },
+        { 
+          name: "Golden Drizzle", 
+          description: "Caramel and butterscotch simple syrup, whipped cream, topped with a caramel drizzle",
+          prices: [
+            { size: "", mg: "", price: "$5" }
+          ]
+        },
+        { 
+          name: "Mocha Cocoa", 
+          description: "Vanilla simple syrup, whipped cream, topped with a chocolate drizzle & chocolate shavings.",
+          prices: [
+            { size: "", mg: "", price: "$5" }
+          ]
+        }
+      ]
+    },
+    {
+      title: "Chill Out",
+      items: [
+        { 
+          name: "Ice Cream Float", 
+          description: "Your choice of Butterbeer, Root Beer, Orange soda, or Cream soda with vanilla ice cream.",
+          prices: [
+            { size: "", mg: "10MG", price: "$8" }
+          ]
+        },
+        { 
+          name: "Seshees", 
+          description: "Blue Raspberry, Grape, Tropical Rush, Strawberry, Candy Apple, or Margarita.",
+          prices: [
+            { size: "12oz", mg: "25MG", price: "$9" },
+            { size: "16oz", mg: "33MG", price: "$12" }
+          ]
+        }
+      ]
+    },
+    {
+      title: "LOADED SODAS",
+      subtitle: "Keep it virgin OR ELEVATE IT! 10MG-$3 | 25MG-$6 | 50MG-$9",
+      items: [
+        { 
+          name: "Love Doctor", 
+          description: "Dr. Pepper, raspberry simple syrup, & coconut milk.",
+          prices: [
+            { size: "", mg: "", price: "$7" }
+          ]
+        },
+        { 
+          name: "Smooth Operator", 
+          description: "Dr. Pepper, caramel simple syrup, caramel sauce, half & half.",
+          prices: [
+            { size: "", mg: "", price: "$7" }
+          ]
+        },
+        { 
+          name: "Red Eye", 
+          description: "Coke, grenadine, vanilla simple syrup, half & half.",
+          prices: [
+            { size: "", mg: "", price: "$7" }
+          ]
+        },
+        { 
+          name: "Sour Diesel", 
+          description: "Coke, lemon simple syrup, & ginger beer.",
+          prices: [
+            { size: "", mg: "", price: "$7" }
+          ]
+        },
+        { 
+          name: "Cloud Nine", 
+          description: "Sprite, blueberry simple syrup, & coconut milk.",
+          prices: [
+            { size: "", mg: "", price: "$7" }
+          ]
+        },
+        { 
+          name: "Raspberry Kush", 
+          description: "Sprite, cranberry juice, raspberry simple syrup, & lime juice.",
+          prices: [
+            { size: "", mg: "", price: "$7" }
+          ]
+        }
+      ]
+    },
+    {
+      title: "CANNA COCKTAILS",
+      subtitle: "Keep it virgin OR ELEVATE IT! 10MG-$3 | 25MG-$6 | 50MG-$9",
+      items: [
+        { 
+          name: "Cranberry Chronic Mule", 
+          description: "Cranberry juice, mint, cranberry simple syrup, & ginger beer",
+          prices: [
+            { size: "", mg: "", price: "$7" }
+          ]
+        },
+        { 
+          name: "Pink Pony", 
+          description: "Raspberry puree, lime juice, raspberry simple, syrup & berry seltzer.",
+          prices: [
+            { size: "", mg: "", price: "$8" }
+          ]
+        },
+        { 
+          name: "Blueberry Dream", 
+          description: "Blueberries, mint, blueberry simple syrup, lime juice, & soda water.",
+          prices: [
+            { size: "", mg: "", price: "$8" }
+          ]
+        },
+        { 
+          name: "Wake & Bake Martini", 
+          description: "Cold brew, hazelnut simple syrup, half & half, topped with sweet cold foam.",
+          prices: [
+            { size: "", mg: "", price: "$9" }
+          ]
+        },
+        { 
+          name: "The Italian", 
+          description: "Club soda with your choice of simple syrup. Coconut, Lime, Blueberry, Lemon, Strawberry, Raspberry, Cranberry, Vanilla, Hazelnut, Peppermint, Caramel, Butterscotch. (Add a splash of half & half or coconut milk for no charge!)",
+          prices: [
+            { size: "", mg: "", price: "$7" }
+          ]
+        }
+      ]
+    }
+  ];
 
-const DrinkMenu = () => {
   return (
-    <div className="container mx-auto p-4">
-    {/*Dragon Hour (use for deals later on) */}
-      <div className="border-tp-5 mb-20">
-        <div className="flex justify-center items-center">
-          <div className="w-2/3">
-            <img
-              src={DragonHour}
-              alt="Drink Menu Left"
-              className="w-full rounded-lg"
-            />
+    <div className="m-auto bg-black text-white p-8 border-2 border-SnapGreen w-2/3">
+      {menuSections.map((section, sectionIndex) => (
+        <div key={sectionIndex} className="mb-12">
+          <h2 className="text-3xl uppercase tracking-wider mb-2 text-center">
+            {section.title}
+          </h2>
+          {section.subtitle && (
+            <p className="text-center text-gray-200 font-bold mb-4">{section.subtitle}<br/>{section.price}</p>
+          )}
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {section.items.map((item, itemIndex) => (
+              <div key={itemIndex} className="space-y-2">
+                <div className="border-b border-SnapGreen pb-1">
+                  <div className="flex justify-between items-start">
+                    <div>
+                      <h3 className="text-xl font-bold">{item.name}</h3>
+                      {item.options && (
+                        <p className="text-sm text-gray-200 font-bold mt-1">{item.options}</p>
+                      )}
+                    </div>
+                  </div>
+                  <p className="text-gray-200 text-sm font-bold">{item.description}</p>
+                  {section.title === "ON-TAP" && item.prices && (
+                    <div className="text-right text-gray-200 font-bold mt-1">
+                      {item.prices.map((price, priceIndex) => (
+                        <div key={priceIndex} className="flex justify-between">
+                          <span>{price.size && `${price.size} `}{price.price}</span>
+                          <span className="block text-sm text-gray-200 font-bold">{price.mg}</span>
+                        </div>
+                      ))}
+                    </div>
+                  )}
+                  {section.title === "LOADED SODAS" && item.prices && (
+                    <div className="text-right text-gray-200 font-bold mt-1">
+                      {item.prices.map((price, priceIndex) => (
+                        <div key={priceIndex} className="flex justify-between">
+                          <span>{price.size && `${price.size} `}{price.price}</span>
+                          <span className="block text-sm text-gray-200 font-bold">{price.mg}</span>
+                        </div>
+                      ))}
+                    </div>
+                  )}
+                  {section.title === "CANNA COCKTAILS" && item.prices && (
+                    <div className="text-right text-gray-200 font-bold mt-1">
+                      {item.prices.map((price, priceIndex) => (
+                        <div key={priceIndex} className="flex justify-between">
+                          <span>{price.size && `${price.size} `}{price.price}</span>
+                          <span className="block text-sm text-gray-200 font-bold">{price.mg}</span>
+                        </div>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              </div>
+            ))}
           </div>
         </div>
-      </div>
+      ))}
 
-      {/* Food Menu Card 
-      <div className="border-t border-SnapGreen p-5 mb-20">
-        <h2 className="text-4xl text-white text-center mb-4">Munchies</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8 items-center">
-          <div className="max-w-md mx-auto">
-            <img
-              src={ShareL}
-              alt="Drink Menu Left"
-              className="w-full rounded-lg"
-            />
-          </div>
-          <div className="max-w-md mx-auto">
-            <img
-              src={ShareR}
-              alt="Drink Menu Right"
-              className="w-full rounded-lg"
-            />
-          </div>
-          <div className="max-w-md mx-auto">
-            <img
-              src={Share2L}
-              alt="Drink Menu Left"
-              className="w-full rounded-lg"
-            />
-          </div>
-          <div className="max-w-md mx-auto">
-            <img
-              src={Share2R}
-              alt="Drink Menu Right"
-              className="w-full rounded-lg"
-            />
-          </div>
-          <div className="max-w-md mx-auto">
-            <img
-              src={SideL}
-              alt="Drink Menu Left"
-              className="w-full rounded-lg"
-            />
-          </div>
-          <div className="max-w-md mx-auto">
-            <img
-              src={SideR}
-              alt="Drink Menu Right"
-              className="w-full rounded-lg"
-            />
-          </div>
-        </div>
-      </div> 
-      */}
-      {/* Dab Menu Card */}
-      <div className="p-5 mb-20">
-        <h2 className="text-4xl text-white text-center mb-4 pt-4 border-t border-SnapGreen">
-          Dab Menu
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
-          <div className="max-w-md mx-auto">
-            <img
-              src={Dab1L}
-              alt="Dab Menu Left"
-              className="w-full rounded-lg"
-            />
-          </div>
-          <div className="max-w-md mx-auto">
-            <img
-              src={Dab1R}
-              alt="Dab Menu Right"
-              className="w-full rounded-lg"
-            />
-          </div>
-          <div className="max-w-md mx-auto">
-            <img
-              src={Dab2L}
-              alt="Dab Menu Left"
-              className="w-full rounded-lg"
-            />
-          </div>
-          <div className="max-w-md mx-auto">
-            <img
-              src={Dab2R}
-              alt="Dab Menu Right"
-              className="w-full rounded-lg"
-            />
-          </div>
-        </div>
-      </div>
-
-      {/* Drink Menu Card */}
-      <div className="border-t border-SnapGreen p-5 mb-20">
-        <h2 className="text-4xl text-white text-center mb-4">Drink Menu</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8 items-center">
-          <div className="max-w-md mx-auto">
-            <img
-              src={Drink1}
-              alt="Drink Menu Left"
-              className="w-full rounded-lg"
-            />
-          </div>
-          <div className="max-w-md mx-auto">
-            <img
-              src={Drink2}
-              alt="Drink Menu Right"
-              className="w-full rounded-lg"
-            />
-          </div>
-          <div className="max-w-md mx-auto">
-            <img
-              src={Drink3}
-              alt="Drink Menu Right"
-              className="w-full rounded-lg"
-            />
-          </div>
-          <div className="max-w-md mx-auto">
-            <img
-              src={Drink4}
-              alt="Drink Menu Right"
-              className="w-full rounded-lg"
-            />
-          </div>
-        </div>
+      <div className="mt-8 text-center text-sm text-gray-200 font-bold">
+        *ALL PRICES & AVAILABILITY ARE SUBJECT TO CHANGE
       </div>
     </div>
   );
-};
-
-export default DrinkMenu;
+}

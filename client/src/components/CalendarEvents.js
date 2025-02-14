@@ -92,7 +92,7 @@ const CalendarEvents = () => {
   const groupedEvents = groupEventsByDate(events);
 
   return (
-    <div className="min-h-screen bg-black text-white flex flex-col items-center py-8 px-4">
+    <div className="bg-black text-white flex flex-col items-center py-8 px-4">
       <h2 className="text-4xl mb-10 text-center">Upcoming Events</h2>
 
       {Object.entries(groupedEvents).map(([date, events]) => (

@@ -1,43 +1,67 @@
-// Hero.js
-import React, { useState, useEffect} from 'react';
-import { Link } from "react-router-dom";
-import Image1 from '../assets/image1.jpg'; // Replace with your actual image path
-import Image3 from '../assets/image3.jpg'; // Replace with your actual image path
-
-const images = [Image1, Image3];
+import React from "react";
+import { Link } from "react-router-dom"; // For the button link
+import HRO from "../assets/herodab.png"; // Import desktop image
+import HRM from "../assets/heromob.png"; // Import mobile image
+import Logo from "../assets/Dragon_Logo.svg"; // Import your logo
+import { ChevronDown } from "lucide-react"; // For the arrow icon
 
 const Hero = () => {
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 5000); // Change image every 5 seconds
-
-    return () => clearTimeout(timer);
-  }, [currentImageIndex]);
-
   return (
-    <section className="relative flex justify-center items-center" style={{ height: '70vh' }}>
-      {images.map((image, index) => (
-        <div
-          key={index}
-          className={`absolute inset-0 transition-opacity duration-500 ease-in-out ${index === currentImageIndex ? 'opacity-100' : 'opacity-0'}`}
-          style={{ backgroundImage: `url(${image})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
+    <div className="relative h-screen bg-black text-gray-100">
+      {/* Background Image for Desktop */}
+      <div
+        className="absolute inset-0 bg-no-repeat bg-center h-screen hidden sm:block pt-5"
+        style={{
+          backgroundImage: `url(${HRO})`,
+          backgroundSize: "cover", // Ensures the full image is visible
+        }}
+      ></div>
+
+      {/* Background Image for Mobile */}
+      <div
+        className="absolute inset-0 bg-no-repeat bg-center h-screen sm:hidden"
+        style={{
+          backgroundImage: `url(${HRM})`,
+          backgroundSize: "cover", // Ensures the full image is visible
+        }}
+      ></div>
+
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-black/40"></div>
+
+      {/* Content */}
+      <div className="relative z-10 flex flex-col items-center justify-center h-full text-center p-6">
+        <h1 className="text-4xl sm:text-5xl lg:text-6xl mb-4">Welcome to</h1>
+        {/* Logo */}
+        <img
+          src={Logo}
+          alt="The Dragon's Logo"
+          className="w-48 sm:w-56 lg:w-64 mb-8"
         />
-      ))}
-      <div className="relative z-10 p-6 md:p-8 bg-black bg-opacity-80 rounded-xl shadow-2xl text-center w-full md:max-w-2xl">
-        <h1 className="text-3xl md:text-4xl text-white leading-tight mb-4">
-          UNLEASH THE DRAGON
-        </h1>
-        <p className='text-white font-bold mb-6'>Experience The Dragon – Chattanooga's pinnacle of cannabis culture, where every visit is a journey to euphoria without the hangover.</p>
-        <Link to='/menu'>
-        <a href="/menu" className="inline-block bg-SnapGreen text-white rounded-md px-5 py-3 uppercase font-bold shadow-md hover:bg-green-600 transition-colors duration-300">
-          View our Menu
-        </a>
+
+        {/* Subheading */}
+        <p className="text-lg sm:text-xl mb-6 max-w-2xl font-bold">
+          Experience Chattanooga's premier 21+ cannabis lounge! Sip RINS9
+          refreshments, savor canna-cocktails, and explore unique cannabis
+          delights in a vibrant, community-focused setting.
+        </p>
+
+        {/* Book Now Button */}
+        <Link to="/menu">
+        <button className="bg-transparent border border-DragYellow hover:bg-SnapGreen hover:border-SnapGreen text-white font-semibold py-3 px-8 rounded-lg shadow-md transition-transform transform hover:scale-105 mb-6">
+          View Menu
+        </button>
         </Link>
       </div>
-    </section>
+
+      {/* Scroll Arrow */}
+      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 z-10">
+        <ChevronDown
+          className="w-12 h-12 text-white animate-bounce"
+          aria-label="Scroll down"
+        />
+      </div>
+    </div>
   );
 };
 

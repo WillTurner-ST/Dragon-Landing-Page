@@ -10,10 +10,10 @@ const NavMain = () => {
   };
 
   return (
-    <nav className="bg-black">
+    <nav className="bg-transparent">
       <div className="max-w-screen-xl flex items-center justify-between mx-auto p-4 relative">
         <a
-          href="https://snapdragonhemp.com/"
+          href="https://jointhedragon.com/"
           className="flex items-center space-x-3"
         >
           <img src={Logo} className="h-20" alt="Snapdragon Hemp" />

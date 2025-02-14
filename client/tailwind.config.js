@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       colors: {
         SnapGreen: '#024436',
+        DragYellow: '#707e25',
       },
     },
   },
