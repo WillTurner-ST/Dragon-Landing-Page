@@ -13,8 +13,7 @@ export default function DabMenu() {
         { name: "VOICANO", price: "$15" },
       ],
       upgrades: [
-        { name: "HEADY GLASS", price: "$3", description: "(PROXY/PRO/CROSSING)" },
-        { name: "3DXL COIL", price: "$3" }
+        { name: "HEADY GLASS", price: "$3", description: "(PROXY/PRO/CROSSING)" }
       ]
     },
     {
