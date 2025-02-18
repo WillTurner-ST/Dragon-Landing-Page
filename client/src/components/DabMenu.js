@@ -10,7 +10,7 @@ export default function DabMenu() {
         { name: "CROSSING CORE 2.1", price: "$5" },
         { name: "PUFFCO PEAK PRO", price: "$10" },
         { name: "E-NAIL", price: "$10" },
-        { name: "VOICANO", price: "$15" },
+        { name: "VOLCANO", price: "$15" },
       ],
       upgrades: [
         { name: "HEADY GLASS", price: "$3", description: "(PROXY/PRO/CROSSING)" }
