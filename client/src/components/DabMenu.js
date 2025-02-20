@@ -61,12 +61,18 @@ export default function DabMenu() {
       price: ["0.10g - $12 | 0.20g - $15 | 0.30g - $20"],
       items: [
         { 
-          name: "Lambs Bread", 
-          description: "This euphoric sativa offers an intense dab with strong, fast-acting cerebral effects and sweet, spicy, pungent flavors."
-        },
-        { 
           name: "THCA Diamonds", 
           description: "99% pure THCA in crystalline form. These diamonds provide an intense potency boost without terpenes or other cannabinoids. The ultimate way to experience THCA."
+        }
+      ]
+    },
+    {
+      title: "Saucy DIAMONDS",
+      price: ["0.20g - $12 | 0.30g - $16"],
+      items: [
+        { 
+          name: "Lambs Bread", 
+          description: "AKA Headstash #3, an incredibly potent indica-dominant hybrid and a cross of Cherry Pie x GSC x KarmaRado OG x Biker Kush. Headstash brings powerful euphoria and full-body melting effects with smooth, earthy, and pine flavors."
         }
       ]
     }
