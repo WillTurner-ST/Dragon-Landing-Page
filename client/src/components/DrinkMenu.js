@@ -6,25 +6,20 @@ export default function DrinkMenu() {
       items: [
         { 
           name: "Draft Drinks", 
-          description: "Pink Lemonade, Cream Soda, Dam Water, Doobie Blast, Rootbeer, or Orange Soda",
+          description: "Pink Lemonade, Cream Soda, Dam Water, Doobie Blast, Rootbeer, or Orange Soda. Choose any 4 flavors to create a flight",
           prices: [
             { size: "12oz", mg: "10MG", price: "$6" },
-            { size: "16oz", mg: "13MG", price: "$8" }
-          ]
-        },
-        { 
-          name: "Draft Flight", 
-          description: "Choose any 4 of our drafts. Pink Lemonade, Cream Soda, Dam Water, Doobie Blast, Rootbeer, or Orange Soda",
-          prices: [
-            { size: "24oz", mg: "20MG", price: "$10" }
+            { size: "16oz", mg: "13MG", price: "$8" },
+            { size: "Pick 4 (24oz total)", mg: "20MG", price: "$10" }
           ]
         },
         { 
           name: "Nitro Cold Brew", 
           description: "50MG blend of: THCV/CBD/CBG. Add coconut milk or half & half and your choice of simple syrup: Vanilla, Hazelnut, Caramel, or Butterscotch",
           prices: [
-            { size: "12oz", mg: "50MG", price: "$6" },
-            { size: "16oz", mg: "100MG", price: "$10" }
+            { size: "‎ ", mg: "‎ ", price: "‎ " },
+            { size: "16oz", mg: "100MG", price: "$10" },
+            { size: "12oz", mg: "50MG", price: "$6" }
           ]
         }
       ]
