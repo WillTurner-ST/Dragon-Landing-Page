@@ -86,7 +86,7 @@ const CalendarEvents = () => {
     if (!description) return null;
     const urlRegex = /(https?:\/\/[^\s]+)/g;
     const matches = description.match(urlRegex);
-    return matches ? matches[0] : null;
+    return matches ? matches[0].replace(/"$/, '') : null; // Remove trailing quote if present
   };
 
   const groupedEvents = groupEventsByDate(events);
