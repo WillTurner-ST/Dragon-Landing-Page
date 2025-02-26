@@ -118,8 +118,8 @@ const CalendarEvents = () => {
       ))}
 
       {modalIsOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center z-50 px-4">
-          <div className="bg-[#0D0D0D] rounded-lg p-6 w-full max-w-md">
+        <div className="fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center z-50 px-4 overflow-hidden">
+          <div className="bg-[#0D0D0D] rounded-lg p-6 w-full max-w-md max-h-full overflow-y-auto">
             <h2 className="text-3xl mb-4 text-white">
               {selectedEvent.summary}
             </h2>
@@ -141,12 +141,13 @@ const CalendarEvents = () => {
             )}
 
             {selectedEvent.description && (
-              <p
-                className="text-white font-bold text-base mt-2"
-                dangerouslySetInnerHTML={{
-                  __html: DOMPurify.sanitize(selectedEvent.description.replace(/\n/g, '<br />')),
-                }}
-              />
+              <div className="text-white font-bold text-base mt-2">
+                <p
+                  dangerouslySetInnerHTML={{
+                    __html: DOMPurify.sanitize(selectedEvent.description.replace(/\n/g, '<br />')),
+                  }}
+                />
+              </div>
             )}
 
             {selectedEvent.ticketURL && (
