@@ -98,7 +98,6 @@ const Location = () => {
           className="relative flex h-full flex-col items-center justify-center text-center"
         >
           <h1 className="text-5xl font-light text-white md:text-6xl">Our Locations</h1>
-          <p className="mt-4 text-xl text-white font-bold">Experience the Cannabis Like Never Before</p>
         </motion.div>
       </div>
 
