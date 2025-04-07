@@ -1,23 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 import { FiMapPin, FiPhone } from "react-icons/fi";
-import L from "leaflet"; // Import Leaflet for custom marker icons
 import DowntownImage from "../assets/Broad_Street.png";
 import UptownImage from "../assets/East_Brainerd.png";
 import "leaflet/dist/leaflet.css";
 import { motion } from "framer-motion";
 
-// Configure custom marker icon
-const customIcon = new L.Icon({
-  iconUrl: "https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-icon.png",
-  iconSize: [25, 41], // Default size
-  iconAnchor: [12, 41], // Anchor point
-  popupAnchor: [1, -34], // Popup position
-  shadowUrl: "https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png",
-  shadowSize: [41, 41] // Shadow size
-});
 
 const Location = () => {
-  const [activeTab, setActiveTab] = useState("details");
 
   const lounges = [
     {
