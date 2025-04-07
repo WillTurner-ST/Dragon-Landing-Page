@@ -8,7 +8,9 @@ const Gallery = () => {
   return (
     <div>
         <NavMain/>
+        <div className='pt-52'>
         <GalleryGrid/>
+        </div>
         <Footer/>
     </div>
   )
