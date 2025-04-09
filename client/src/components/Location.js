@@ -114,7 +114,7 @@ const Location = () => {
     {
       id: 4,
       name: "Dragon Dab Bar - East Ridge 2",
-      address: "3909 Ringgold Rd Suite B, East Ridge, TN 37412",
+      address: "3909 Ringgold Rd, East Ridge, TN 37412",
       coordinates: [34.99841588728059, -85.2538859986546],
       phone: "(423) 555-3456",
       hours: {
