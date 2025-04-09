@@ -47,7 +47,7 @@ const Hero = () => {
         </p>
 
         {/* Book Now Button */}
-        <Link to="/menu">
+        <Link to="/menu/broad-street">
         <button className="bg-transparent border border-DragYellow hover:bg-SnapGreen hover:border-SnapGreen text-white font-semibold py-3 px-8 rounded-lg shadow-md transition-transform transform hover:scale-105 mb-6">
           View Menu
         </button>

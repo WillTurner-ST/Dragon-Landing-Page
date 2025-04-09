@@ -6,7 +6,7 @@ const AboutUs = () => {
   const navigate = useNavigate();
 
   const GoToMenu = () => {
-    navigate("/menu");
+    navigate("/menu/broad-street");
   };
 
   return (
