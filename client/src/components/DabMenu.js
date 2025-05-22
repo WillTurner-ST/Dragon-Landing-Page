@@ -18,7 +18,7 @@ export default function DabMenu() {
     },
     {
       title: "HOUSE CONCENTRATES",
-      price: [".10g $6 | .20g $10 | .30g $14"],
+      price: [".05g $2.99 | .10g $6 | .20g $10 | .30g $14"],
       items: [
         { 
           name: "Ghost Ryder", 
@@ -44,7 +44,7 @@ export default function DabMenu() {
     },
     {
       title: "PREMIUM CONCENTRATES",
-      price: ["0.20g - $12 | 0.30g - $16"],
+      price: ["0.05g - $3.99 | 0.1g - $7.99 | 0.20g - $12 | 0.30g - $16"],
       items: [
         { 
           name: "Head Stash", 
@@ -58,7 +58,7 @@ export default function DabMenu() {
     },
     {
       title: "DIAMONDS",
-      price: ["0.10g - $12 | 0.20g - $15 | 0.30g - $20"],
+      price: ["0.05g - $5.99 | 0.10g - $12 | 0.20g - $15 | 0.30g - $20"],
       items: [
         { 
           name: "THCA Diamonds", 
@@ -68,7 +68,7 @@ export default function DabMenu() {
     },
     {
       title: "Saucy DIAMONDS",
-      price: ["0.20g - $12 | 0.30g - $16"],
+      price: ["0.05g - $5.99 | 0.10g - $12 | 0.20g - $15 | 0.30g - $20"],
       items: [
         { 
           name: "Lambs Bread", 
