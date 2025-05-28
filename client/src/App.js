@@ -7,6 +7,7 @@ import Gallery from "./views/Gallery";
 import Contact from "./views/Contact";
 import Locations from "./views/Locations";
 import EbMenu from "./views/EbMenu";
+import StoreMenu from "./views/StoreMenu";
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
           <Route path="/contact" element={<Contact />}/>
           <Route path="/locations" element={<Locations />}/>
           <Route path="/menu/east-brainerd" element={<EbMenu />}/>
+          <Route path="/menu/store-dab-bar" element={<StoreMenu />}/>
         </Routes>
       </BrowserRouter>
     </div>

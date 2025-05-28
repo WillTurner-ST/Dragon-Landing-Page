@@ -66,7 +66,7 @@ const NavMain = () => {
                       to="/menu/east-brainerd"
                       className="block px-4 py-2 hover:bg-gray-700"
                     >
-                      East Brainerd Menu
+                      East Brainerd
                     </Link>
                   </li>
                   <li>
@@ -74,7 +74,15 @@ const NavMain = () => {
                       to="/menu/broad-street"
                       className="block px-4 py-2 hover:bg-gray-700"
                     >
-                      Broad Street Menu
+                      Broad Street
+                    </Link>
+                  </li>
+                   <li>
+                    <Link
+                      to="/menu/store-dab-bar"
+                      className="block px-4 py-2 hover:bg-gray-700"
+                    >
+                      Store Dab Bar
                     </Link>
                   </li>
                 </ul>
