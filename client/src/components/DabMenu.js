@@ -82,9 +82,9 @@ export default function DabMenu() {
     <div className='flex flex-col justify-center items-center'>
       <div className='mx-auto text-center text-gray-200 mb-8'>
         <h1 className='text-5xl mb-6'>Dragon Hour</h1>
-        <p className='text-lg font-bold text-gray-200'>Everyday from 2:30 PM to 4:20 PM Everyday</p>
+        <p className='text-lg font-bold text-gray-200'>Everyday from 4:00PM to 5:00PM Everyday</p>
         <p className='text-lg font-bold text-gray-200'>2x loyalty points</p>
-        <p className='text-lg font-bold text-gray-200'>Pay for your dab & piece rental & get a free draft beverage</p>
+        <p className='text-lg font-bold text-gray-200'>Piece rental waived for dabs</p>
       </div>
       <div className='mx-auto'>
       </div>
