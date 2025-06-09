@@ -6,7 +6,7 @@ const AboutUs = () => {
   const navigate = useNavigate();
 
   const GoToMenu = () => {
-    navigate("/menu/broad-street");
+    navigate("/menu");
   };
 
   return (
@@ -24,7 +24,7 @@ const AboutUs = () => {
       {/* Text Section */}
       <div className="mt-12 lg:mt-0 text-center lg:text-left max-w-lg">
         <h1 className="text-4xl sm:text-5xl">Dab, Sip, and Unwind at The Dragon</h1>
-        <p className="mt-6 text-lg font-bold sm:text-xl text-gray-100">
+        <p className="mt-6 text-lg sm:text-xl text-gray-100 font-light">
         Step into The Dragon, where the vibes are as smooth as our dabs and the drinks are crafted to perfection. Whether you're a seasoned connoisseur or new to the scene, our expert staff is here to guide you through our curated selection of premium concentrates and cocktails. Discover your new favorite indulgence and let The Dragon ignite your senses.
         </p>
         <button 

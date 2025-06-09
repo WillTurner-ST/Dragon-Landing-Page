@@ -80,15 +80,9 @@ export default function DabMenu() {
 
   return (
     <div className='flex flex-col justify-center items-center'>
-      <div className='mx-auto text-center text-gray-200 mb-8'>
-        <h1 className='text-5xl mb-6'>Dragon Hour</h1>
-        <p className='text-lg font-bold text-gray-200'>Everyday from 4:00PM to 5:00PM Everyday</p>
-        <p className='text-lg font-bold text-gray-200'>2x loyalty points</p>
-        <p className='text-lg font-bold text-gray-200'>Piece rental waived for dabs</p>
-      </div>
       <div className='mx-auto'>
       </div>
-      <div className="m-auto bg-black text-white p-4 md:p-8 border-2 border-SnapGreen w-2/3 md:w-2/3">
+      <div className="m-auto bg-black text-white p-4 md:p-8 border-2 border-SnapGreen w-4/5 md:w-4/5">
         {/* Hardware Section */}
         <div className="mb-8">
           <h2 className="text-2xl md:text-3xl uppercase tracking-wider mb-4 text-center">
@@ -136,9 +130,9 @@ export default function DabMenu() {
               {section.items.map((item, itemIndex) => (
                 <div key={itemIndex} className="space-y-2">
                   <div className="flex justify-between items-center border-b border-SnapGreen pb-1">
-                    <h3 className="text-lg md:text-xl font-semibold">{item.name}</h3>
+                    <h3 className="text-lg md:text-xl font-bold">{item.name}</h3>
                   </div>
-                  <p className="text-gray-200 text-xs md:text-sm font-bold">{item.description}</p>
+                  <p className="text-gray-200 text-xs md:text-sm font-medium">{item.description}</p>
                 </div>
               ))}
             </div>

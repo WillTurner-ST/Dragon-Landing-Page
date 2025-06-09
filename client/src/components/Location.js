@@ -182,17 +182,17 @@ const Location = () => {
                   <FiMapPin className="h-8 w-8 text-SnapGreen" />
                   <div>
                     <h2 className="text-2xl text-white">{lounge.name}</h2>
-                    <p className="text-gray-300 font-bold">{lounge.address}</p>
+                    <p className="text-gray-300 font-normal">{lounge.address}</p>
                   </div>
                 </div>
-                <p className="text-white font-bold">{lounge.description}</p>
-                <div className="mt-6 flex items-center gap-2 text-gray-300 font-bold">
+                <p className="text-white font-normal">{lounge.description}</p>
+                <div className="mt-6 flex items-center gap-2 text-gray-300 font-normal">
                   <FiPhone className="h-5 w-5" />
                   <a href={`tel:${lounge.phone}`} className="hover:text-green-600">
                     {lounge.phone}
                   </a>
                 </div>
-                <div className="mt-6 grid grid-cols-2 gap-4 font-bold">
+                <div className="mt-6 grid grid-cols-2 gap-4 font-normal">
                   {groupHours(lounge.hours).map((group, idx) => (
                     <div key={idx} className="space-y-2">
                       <p className="text-gray-200 capitalize">{group.displayDays}</p>
@@ -205,9 +205,9 @@ const Location = () => {
                     href={`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(lounge.address)}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2 rounded-lg border font-bold border-SnapGreen px-6 py-3 text-white transition-all hover:border-green-400 hover:text-green-400"
+                    className="flex items-center gap-2 rounded-lg border font-normal border-SnapGreen px-6 py-3 text-white transition-all hover:border-green-400 hover:text-green-400"
                   >
-                    <FiMapPin className="h-5 w-5 font-bold" />
+                    <FiMapPin className="h-5 w-5 font-normal" />
                     Get Directions
                   </a>
                 </div>
@@ -233,10 +233,10 @@ const Location = () => {
                   <FiMapPin className="h-8 w-8 text-SnapGreen" />
                   <div>
                     <h2 className="text-2xl text-white">{bar.name}</h2>
-                    <p className="text-gray-300 font-bold">{bar.address}</p>
+                    <p className="text-gray-300 font-normal">{bar.address}</p>
                   </div>
                 </div>
-                <div className="mt-6 grid grid-cols-2 gap-4 font-bold">
+                <div className="mt-6 grid grid-cols-2 gap-4 font-normal">
                   {groupHours(bar.hours).map((group, idx) => (
                     <div key={idx} className="space-y-2">
                       <p className="text-gray-200 capitalize">{group.displayDays}</p>
@@ -249,9 +249,9 @@ const Location = () => {
                     href={`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(bar.address)}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2 rounded-lg border font-bold border-SnapGreen px-6 py-3 text-white transition-all hover:border-green-400 hover:text-green-400"
+                    className="flex items-center gap-2 rounded-lg border font-normal border-SnapGreen px-6 py-3 text-white transition-all hover:border-green-400 hover:text-green-400"
                   >
-                    <FiMapPin className="h-5 w-5 font-bold" />
+                    <FiMapPin className="h-5 w-5 font-normal" />
                     Get Directions
                   </a>
                 </div>

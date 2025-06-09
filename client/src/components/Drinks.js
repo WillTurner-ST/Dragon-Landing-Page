@@ -15,7 +15,7 @@ const Drinks = () => {
   return (
     <div className="bg-black py-20 px-6 sm:px-12 lg:px-16 text-white max-w-7xl mx-auto">
       <h2 className="text-4xl text-center sm:text-5xl">Featured Mocktails</h2>
-      <p className="mt-6 text-lg sm:text-xl text-center font-bold">
+      <p className="mt-6 text-lg sm:text-xl text-center font-normal">
         Explore our handcrafted, infused drinks designed to elevate your experience.
       </p>
 
@@ -28,7 +28,7 @@ const Drinks = () => {
             <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-black/30 rounded-lg pointer-events-none"></div>
             <img src={drink.image} alt={drink.name} className="relative w-full h-56 object-cover rounded-lg" />
             <h2 className="relative mt-4 text-2xl tracking-wide">{drink.name}</h2>
-            <p className="relative mt-2 text-gray-300 font-bold">{drink.description}</p>
+            <p className="relative mt-2 text-gray-300 font-normal">{drink.description}</p>
           </div>
         ))}
       </div>

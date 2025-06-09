@@ -13,35 +13,29 @@ body {
 }
 
 /* Using Font 1 for headers */
-h1,h2,h4 {
-  font-family: 'qiduwy', sans-serif;
+/* REPLACE 'YourHeaderFontFromTypekit' with the actual font family name from your Typekit kit */
+h1, h2, h4 {
+  font-family: 'qiduwy', sans-serif; /* Example: 'qiduwy-typekit' or 'adelle-sans' */
 }
 
 /* Using Font 2 for body text */
-p, h3,a {
-  font-family: 'Montserrate', sans-serif;
+/* REPLACE 'YourBodyFontFromTypekit' with the actual font family name from your Typekit kit */
+p, h3, a {
+  font-family: 'Montserrat', sans-serif; /* Example: 'montserrat-typekit' or 'proxima-nova' */
 }
+
 
 @font-face {
   font-family: 'qiduwy';
   src: url('./assets/fonts/qiduwy-webfont.woff2') format('woff2'),
-      url('./assets/fonts/qiduwy-webfont.woff') format('woff');
+       url('./assets/fonts/qiduwy-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
-@font-face {
-  font-family: 'Montserrate';
-  src: url('./assets/fonts/montserrat-variablefont_wght-webfont.woff2') format('woff2'),
-      url('./assets/fonts/montserrat-variablefont_wght-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-

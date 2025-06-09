@@ -40,7 +40,7 @@ const Hero = () => {
         />
 
         {/* Subheading */}
-        <p className="text-lg sm:text-xl mb-6 max-w-2xl font-bold">
+        <p className="text-lg sm:text-xl mb-6 max-w-2xl font-extralight">
           Experience Chattanooga's premier 21+ cannabis lounge! Sip RINS9
           refreshments, savor canna-cocktails, and explore unique cannabis
           delights in a vibrant, community-focused setting.

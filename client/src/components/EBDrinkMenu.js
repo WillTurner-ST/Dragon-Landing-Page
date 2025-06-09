@@ -170,7 +170,7 @@ export default function EBMenu() {
               {section.title}
             </h2>
             {section.subtitle && (
-              <p className="text-center text-gray-200 font-bold mb-4">{section.subtitle}<br/>{section.price}</p>
+              <p className="text-center text-gray-200 font-normal mb-4">{section.subtitle}<br/>{section.price}</p>
             )}
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -179,39 +179,39 @@ export default function EBMenu() {
                   <div className="border-b border-SnapGreen pb-1">
                     <div className="flex justify-between items-start">
                       <div>
-                        <h3 className="text-xl font-bold">{item.name}</h3>
+                        <h3 className="text-xl font-normal">{item.name}</h3>
                         {item.options && (
-                          <p className="text-sm text-gray-200 font-bold mt-1">{item.options}</p>
+                          <p className="text-sm text-gray-200 font-normal mt-1">{item.options}</p>
                         )}
                       </div>
                     </div>
-                    <p className="text-gray-200 text-sm font-bold">{item.description}</p>
+                    <p className="text-gray-200 text-sm font-normal">{item.description}</p>
                     {section.title === "ON-TAP" && item.prices && (
-                      <div className="text-right text-gray-200 font-bold mt-1">
+                      <div className="text-right text-gray-200 font-normal mt-1">
                         {item.prices.map((price, priceIndex) => (
                           <div key={priceIndex} className="flex justify-between">
                             <span>{price.size && `${price.size} `}{price.price}</span>
-                            <span className="block text-sm text-gray-200 font-bold">{price.mg}</span>
+                            <span className="block text-sm text-gray-200 font-normal">{price.mg}</span>
                           </div>
                         ))}
                       </div>
                     )}
                     {section.title === "LOADED SODAS" && item.prices && (
-                      <div className="text-right text-gray-200 font-bold mt-1">
+                      <div className="text-right text-gray-200 font-normal mt-1">
                         {item.prices.map((price, priceIndex) => (
                           <div key={priceIndex} className="flex justify-between">
                             <span>{price.size && `${price.size} `}{price.price}</span>
-                            <span className="block text-sm text-gray-200 font-bold">{price.mg}</span>
+                            <span className="block text-sm text-gray-200 font-normal">{price.mg}</span>
                           </div>
                         ))}
                       </div>
                     )}
                     {section.title === "CANNA COCKTAILS" && item.prices && (
-                      <div className="text-right text-gray-200 font-bold mt-1">
+                      <div className="text-right text-gray-200 font-normal mt-1">
                         {item.prices.map((price, priceIndex) => (
                           <div key={priceIndex} className="flex justify-between">
                             <span>{price.size && `${price.size} `}{price.price}</span>
-                            <span className="block text-sm text-gray-200 font-bold">{price.mg}</span>
+                            <span className="block text-sm text-gray-200 font-normal">{price.mg}</span>
                           </div>
                         ))}
                       </div>
@@ -223,7 +223,7 @@ export default function EBMenu() {
           </div>
         ))}
   
-        <div className="mt-8 text-center text-sm text-gray-200 font-bold">
+        <div className="mt-8 text-center text-sm text-gray-200 font-normal">
           *ALL PRICES & AVAILABILITY ARE SUBJECT TO CHANGE
         </div>
       </div>

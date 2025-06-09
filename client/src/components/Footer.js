@@ -18,10 +18,10 @@ const Footer = () => {
               <h2 className="mb-6 text-xl text-white uppercase">Contact Us</h2>
               <ul className="text-white">
                 <li className="mb-4">
-                  <a href="tel:+14239540710" className="hover:underline font-bold text-md">(423)-954-0710</a>
+                  <a href="tel:+14239540710" className="hover:underline font-normal text-md">(423)-954-0710</a>
                 </li>
                 <li>
-                  <a href="mailto:contact@snapdragonhemp.com" className="hover:underline font-bold break-words">Contact@snapdragonhemp.com</a>
+                  <a href="mailto:contact@snapdragonhemp.com" className="hover:underline font-normal break-words">Contact@snapdragonhemp.com</a>
                 </li>
               </ul>
             </div>
@@ -29,10 +29,10 @@ const Footer = () => {
               <h2 className="mb-6 text-xl text-white uppercase">Legal</h2>
               <ul className="text-white">
                 <li className="mb-4">
-                  <a href="https://www.snapdragonhemp.com/privacy-policy/" className="hover:underline font-bold">Privacy Policy</a>
+                  <a href="https://www.snapdragonhemp.com/privacy-policy/" className="hover:underline font-normal">Privacy Policy</a>
                 </li>
                 <li>
-                  <a href="https://www.snapdragonhemp.com/terms-of-service/" className="hover:underline font-bold">Terms &amp; Conditions</a>
+                  <a href="https://www.snapdragonhemp.com/terms-of-service/" className="hover:underline font-normal">Terms &amp; Conditions</a>
                 </li>
               </ul>
             </div>

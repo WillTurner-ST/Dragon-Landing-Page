@@ -108,7 +108,7 @@ const CalendarEvents = () => {
               onClick={() => openModal(event)}
             >
               <h2 className="text-2xl mb-2 text-white">{event.summary}</h2>
-              <p className="text-white font-bold text-base">
+              <p className="text-white font-normal text-base">
                 {formatTime(event.start.dateTime || event.start.date)} -{" "}
                 {formatTime(event.end.dateTime || event.end.date)}
               </p>
@@ -124,24 +124,24 @@ const CalendarEvents = () => {
               {selectedEvent.summary}
             </h2>
 
-            <p className="text-white font-bold text-base mb-2">
-              <span className="font-bolder">Start:</span>{" "}
+            <p className="text-white font-normal text-base mb-2">
+              <span className="font-normaler">Start:</span>{" "}
               {formatTime(selectedEvent.start.dateTime || selectedEvent.start.date)}
             </p>
-            <p className="text-white font-bold text-base mb-2">
-              <span className="font-bolder">End:</span>{" "}
+            <p className="text-white font-normal text-base mb-2">
+              <span className="font-normaler">End:</span>{" "}
               {formatTime(selectedEvent.end.dateTime || selectedEvent.end.date)}
             </p>
 
             {selectedEvent.location && (
-              <p className="text-white font-bold text-base mb-2">
-                <span className="font-bolder">Location:</span>{" "}
+              <p className="text-white font-normal text-base mb-2">
+                <span className="font-normaler">Location:</span>{" "}
                 {selectedEvent.location}
               </p>
             )}
 
             {selectedEvent.description && (
-              <div className="text-white font-bold text-base mt-2">
+              <div className="text-white font-normal text-base mt-2">
                 <p
                   dangerouslySetInnerHTML={{
                     __html: DOMPurify.sanitize(selectedEvent.description.replace(/\n/g, '<br />')),
@@ -155,7 +155,7 @@ const CalendarEvents = () => {
                 href={selectedEvent.ticketURL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-4 w-full px-4 py-2 bg-SnapGreen text-white font-bold rounded-lg hover:bg-red-900 transition text-center block"
+                className="mt-4 w-full px-4 py-2 bg-SnapGreen text-white font-normal rounded-lg hover:bg-red-900 transition text-center block"
               >
                 Purchase Tickets
               </a>
@@ -163,7 +163,7 @@ const CalendarEvents = () => {
 
             <button
               onClick={closeModal}
-              className="mt-4 w-full px-4 py-2 bg-SnapGreen text-white font-bold rounded-lg hover:bg-red-900 transition"
+              className="mt-4 w-full px-4 py-2 bg-SnapGreen text-white font-normal rounded-lg hover:bg-red-900 transition"
             >
               Close
             </button>

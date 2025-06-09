@@ -43,13 +43,13 @@ export default function RotatingReviews() {
             transition={{ duration: 1.0 }}
             className="bg-[#0D0D0D] border-DragYellow border-2 shadow-xl rounded-2xl p-6"
           >
-            <p className="text-lg text-center font-bold tracking-wide text-gray-50">"{reviews[index].text}"</p>
+            <p className="text-lg text-center font-normal tracking-wide text-gray-50">"{reviews[index].text}"</p>
             <div className="flex mt-3 justify-center">
               {[...Array(reviews[index].rating)].map((_, i) => (
                 <Star key={i} className="text-yellow-400" size={30} />
               ))}
             </div>
-            <span className="mt-3 text-white font-bold block text-center">
+            <span className="mt-3 text-white font-normal block text-center">
               - {reviews[index].name}
             </span>
           </motion.div>

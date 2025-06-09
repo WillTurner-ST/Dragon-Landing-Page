@@ -4,14 +4,9 @@ import Logo from "../assets/Dragon_Logo.png";
 
 const NavMain = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
-  };
-
-  const toggleMenuDropdown = () => {
-    setIsMenuOpen(!isMenuOpen);
   };
 
   return (
@@ -46,47 +41,16 @@ const NavMain = () => {
 
         {/* Desktop Menu */}
         <div className="hidden md:flex md:w-auto">
-          <ul className="font-bold flex space-x-8">
+          <ul className="font-medium flex space-x-8">
             <li>
               <Link to="/" className="hover:text-gray-400">
                 Home
               </Link>
             </li>
-            <li className="relative">
-              <button
-                onClick={toggleMenuDropdown}
-                className="hover:text-gray-400 focus:outline-none"
-              >
-                <p>Menu</p>
-              </button>
-              {isMenuOpen && (
-                <ul className="absolute left-0 mt-2 w-48 bg-black border border-SnapGreen rounded-lg shadow-lg">
-                  <li>
-                    <Link
-                      to="/menu/east-brainerd"
-                      className="block px-4 py-2 hover:bg-gray-700"
-                    >
-                      East Brainerd
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      to="/menu/broad-street"
-                      className="block px-4 py-2 hover:bg-gray-700"
-                    >
-                      Broad Street
-                    </Link>
-                  </li>
-                   <li>
-                    <Link
-                      to="/menu/store-dab-bar"
-                      className="block px-4 py-2 hover:bg-gray-700"
-                    >
-                      Store Dab Bar
-                    </Link>
-                  </li>
-                </ul>
-              )}
+            <li>
+              <Link to="/menu" className="hover:text-gray-400">
+                Menu
+              </Link>
             </li>
             <li>
               <Link to="/events" className="hover:text-gray-400">
@@ -125,32 +89,9 @@ const NavMain = () => {
               </Link>
             </li>
             <li>
-              <button
-                onClick={toggleMenuDropdown}
-                className="hover:text-gray-400 focus:outline-none"
-              >
-                <p>Menu</p>
-              </button>
-              {isMenuOpen && (
-                <ul className="mt-2 bg-black border border-SnapGreen rounded-lg shadow-lg">
-                  <li>
-                    <Link
-                      to="/menu/east-brainerd"
-                      className="block px-4 py-2 hover:bg-gray-700"
-                    >
-                      East Brainerd Menu
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      to="/menu/broad-street"
-                      className="block px-4 py-2 hover:bg-gray-700"
-                    >
-                      Broad Street Menu
-                    </Link>
-                  </li>
-                </ul>
-              )}
+              <Link to="/menu" className="hover:text-gray-400">
+                Menu
+              </Link>
             </li>
             <li>
               <Link to="/events" className="hover:text-gray-400">

@@ -8,6 +8,7 @@ import Contact from "./views/Contact";
 import Locations from "./views/Locations";
 import EbMenu from "./views/EbMenu";
 import StoreMenu from "./views/StoreMenu";
+import MenuLanding from "./views/MenuLanding";
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
           <Route path="/locations" element={<Locations />}/>
           <Route path="/menu/east-brainerd" element={<EbMenu />}/>
           <Route path="/menu/store-dab-bar" element={<StoreMenu />}/>
+          <Route path="/menu" element={<MenuLanding />} />
         </Routes>
       </BrowserRouter>
     </div>
