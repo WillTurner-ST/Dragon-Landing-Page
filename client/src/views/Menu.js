@@ -53,7 +53,7 @@ const Menu = () => {
 <div className="flex flex-row justify-center items-center gap-2 px-4 mb-6 overflow-x-auto">
       <h4
         onClick={() => scrollToSection(dabMenuRef)}
-        className="cursor-pointer text-white 9 transform transition duration-200 hover:scale-110"
+        className="cursor-pointer text-white text-4xl sm:text-4xl md:text-4xl transform transition duration-200 hover:scale-110"
       >
         DABS
       </h4>
