@@ -67,7 +67,7 @@ export default function StoreDabMenu() {
       items: [
         { 
           name: "Lambs Bread", 
-          description: "AKA Headstash #3, an incredibly potent indica-dominant hybrid and a cross of Cherry Pie x GSC x KarmaRado OG x Biker Kush. Headstash brings powerful euphoria and full-body melting effects with smooth, earthy, and pine flavors."
+          description: "Lamb’s Bread delivers a sweet, spicy flavor, thanks to its rich terpene profile dominated by caryophyllene, with supporting notes from myrcene and limonene. The effects are typically uplifting, energetic, and creativity-enhancing, making it a go-to for clear-headed daytime use."
         }
       ]
     },
