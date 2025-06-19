@@ -1,212 +1,182 @@
 export default function DrinkMenu() {
   const menuSections = [
     {
-      title: "ON-TAP",
-      subtitle: "ELEVATE IT! 10MG-$3 | 25MG-$6 | 50MG-$9",
+      title: "Canna Cocktails",
+      subtitle: "",
       items: [
-        { 
-          name: "Draft Drinks", 
-          description: "Pink Lemonade, Cream Soda, Dam Water, Doobie Blast, Rootbeer, or Orange Soda. Choose any 4 flavors to create a flight",
+        {
+          name: "Strawberries & Cream - $8",
+          description: "Strawberries, Coconut Milk, Strawberry Simple Syrup, Vanilla Simple Syrup, & Coconut Shavings",
+          kava: true, // New kava data point
           prices: [
-            { size: "12oz", mg: "10MG", price: "$6" },
-            { size: "16oz", mg: "13MG", price: "$8" },
-            { size: "Pick 4 (24oz total)", mg: "20MG", price: "$10" }
+            { size: "", mg: "", price: "" },
           ]
         },
-        { 
-          name: "Nitro Cold Brew", 
-          description: "50MG blend of: THCV/CBD/CBG. Add coconut milk or half & half and your choice of simple syrup: Vanilla, Hazelnut, Caramel, or Butterscotch",
+        {
+          name: "Classic Mojito - $8",
+          description: "Coconut Milk, Coconut Simple Syrup, Lime Juice, Gingerbeer, Mint",
+          kava: true,
           prices: [
-            { size: "‎ ", mg: "‎ ", price: "‎ " },
-            { size: "16oz", mg: "100MG", price: "$10" },
-            { size: "12oz", mg: "50MG", price: "$6" }
+            { size: "", mg: "", price: "" },
           ]
-        }
+        },
+        {
+          name: "Midnight Mimosa - $9",
+          description: "Orange Juice, Blueberry Simple Syrup, Lime Juice, Lime Seltzer, Dried Lime ",
+          prices: [
+            { size: "", mg: "", price: "" },
+          ]
+        },
+        {
+          name: "Golden Hour - $7",
+          description: "Apricot Simple Syrup, Ginger, Lemon Juice, Club Soda, Candied Apricots ",
+          prices: [
+            { size: "", mg: "", price: "" },
+          ]
+        },
+        {
+          name: "Watermelon Sugar High - $7",
+          description: "Watermelon, Agave Syrup, Lime Juice, Club Soda, Rock Candy",
+          prices: [
+            { size: "", mg: "", price: "" },
+          ]
+        },
       ]
     },
     {
-      title: "Warmup",
-      subtitle: "Keep it virgin OR ELEVATE IT! 10MG-$3 | 25MG-$6 | 50MG-$9",
+      title: "Loaded Sodas",
+      subtitle: "",
       items: [
-        { 
-          name: "Winter Wonderland", 
-          description: "Peppermint and vanilla simple syrup, whipped cream, topped with crushed candy canes.",
+        {
+          name: "Peachy Keen - $7",
+          description: "Sprite, Peaches, Mango Simple Syrup, Coconut Milk",
           prices: [
-            { size: "", mg: "", price: "$5" }
+            { size: "", mg: "", price: "" }
           ]
         },
-        { 
-          name: "Golden Drizzle", 
-          description: "Caramel and butterscotch simple syrup, whipped cream, topped with a caramel drizzle",
+        {
+          name: "Raspberry Kush - $7",
+          description: "Sprite, Raspberries, Cranberry Juice, Raspberry Simple Syrup, & Lime juice",
           prices: [
-            { size: "", mg: "", price: "$5" }
+            { size: "", mg: "", price: "" }
           ]
         },
-        { 
-          name: "Mocha Cocoa", 
-          description: "Vanilla simple syrup, whipped cream, topped with a chocolate drizzle & chocolate shavings.",
+        {
+          name: "Smooth Operator - $7",
+          description: "Dr. Pepper, Caramel Sauce, Butterscotch Simple Syrup, Half & Half",
           prices: [
-            { size: "", mg: "", price: "$5" }
+            { size: "", mg: "", price: "" }
           ]
-        }
+        },
+        {
+          name: "The Melon Doc - $7",
+          description: "Dr. Pepper, Watermelon Simple Syrup, Coconut Milk",
+          prices: [
+            { size: "", mg: "", price: "" }
+          ]
+        },
+        {
+          name: "Red Eye - $7",
+          description: "Coke or Diet Coke, Grenadine, Vanilla Simple Syrup, Half & Half",
+          prices: [
+            { size: "", mg: "", price: "" }
+          ]
+        },
+        {
+          name: "Blue Crush - $7",
+          description: "Coke or Diet Coke, Blueberry Simple Syrup, Coconut Milk",
+          prices: [
+            { size: "", mg: "", price: "" }
+          ]
+        },
       ]
     },
     {
-      title: "Chill Out",
+      title: "Choose Your Own Adventure",
       items: [
-        { 
-          name: "Ice Cream Float", 
-          description: "Your choice of Butterbeer, Root Beer, Orange soda, or Cream soda with vanilla ice cream.",
+        {
+          name: "The Italian - $7",
+          // Added <br /> tags for line breaks
+          description: "Club soda with your choice of simple syrup. <br /> <br />Coconut, Lime, Blueberry, Lemon, Strawberry, Raspberry, Cranberry, Watermelon, Vanilla, Hazelnut, Caramel, Butterscotch.<br /> <br />(Add a splash of half & half or coconut milk for no charge!)",
           prices: [
-            { size: "", mg: "10MG", price: "$8" }
+            { size: "", mg: "", price: "" }
           ]
         },
-        { 
-          name: "Seshees", 
-          description: "Blue Raspberry, Grape, Tropical Rush, Strawberry, Candy Apple, or Margarita.",
+        {
+          name: "The Mojito - $8",
+          description: "A classic mojito with your choice of additional simple syrup flavor",
           prices: [
-            { size: "12oz", mg: "25MG", price: "$9" },
-            { size: "16oz", mg: "33MG", price: "$12" }
+            { size: "", mg: "", price: "" },
           ]
-        }
+        },
+        {
+          name: "Draft Drinks - $6 12oz | $8 16oz",
+          description: "Rootbeer, Cream Soda, Orange Soda, Pink Lemonade, Dam Water, Doobie Blastor ",
+          prices: [
+            { size: "Make it a Flight - $10 for 20mg", price: "" }, // Removed mg from here as it's not applicable
+            { size: "Make it a Float - +$2", price: "" }, // Removed mg from here as it's not applicable
+          ]
+        },
+        {
+          name: "Seshees",
+          description: "Choose from our rotating seshee flavors ",
+          prices: [
+            { size: "12oz", price: "$9", mg: "25mg" }, // Moved mg to correct field
+            { size: "16oz", price: "$12", mg: "33mg" }, // Moved mg to correct field
+          ]
+        },
+        {
+          name: "Nitro Cold Brew ",
+          description: "Add coconut milk or half & half plus your choice of simple syrup: Vanilla, Hazelnut, Caramel, Butterscotch",
+          prices: [
+            { size: "12oz", mg: "50mg blend of THCV/CBD/CBG", price: "$6" },
+            { size: "16oz", mg: "100mg blend of THCV/CBD/CBG", price: "$12" },
+          ]
+        },
       ]
     },
-    {
-      title: "LOADED SODAS",
-      subtitle: "Keep it virgin OR ELEVATE IT! 10MG-$3 | 25MG-$6 | 50MG-$9",
-      items: [
-        { 
-          name: "Love Doctor", 
-          description: "Dr. Pepper, raspberry simple syrup, & coconut milk.",
-          prices: [
-            { size: "", mg: "", price: "$7" }
-          ]
-        },
-        { 
-          name: "Smooth Operator", 
-          description: "Dr. Pepper, caramel simple syrup, caramel sauce, half & half.",
-          prices: [
-            { size: "", mg: "", price: "$7" }
-          ]
-        },
-        { 
-          name: "Red Eye", 
-          description: "Coke, grenadine, vanilla simple syrup, half & half.",
-          prices: [
-            { size: "", mg: "", price: "$7" }
-          ]
-        },
-        { 
-          name: "Sour Diesel", 
-          description: "Coke, lemon simple syrup, & ginger beer.",
-          prices: [
-            { size: "", mg: "", price: "$7" }
-          ]
-        },
-        { 
-          name: "Cloud Nine", 
-          description: "Sprite, blueberry simple syrup, & coconut milk.",
-          prices: [
-            { size: "", mg: "", price: "$7" }
-          ]
-        },
-        { 
-          name: "Raspberry Kush", 
-          description: "Sprite, cranberry juice, raspberry simple syrup, & lime juice.",
-          prices: [
-            { size: "", mg: "", price: "$7" }
-          ]
-        }
-      ]
-    },
-    {
-      title: "CANNA COCKTAILS",
-      subtitle: "Keep it virgin OR ELEVATE IT! 10MG-$3 | 25MG-$6 | 50MG-$9",
-      items: [
-        { 
-          name: "Cranberry Chronic Mule", 
-          description: "Cranberry juice, mint, cranberry simple syrup, & ginger beer",
-          prices: [
-            { size: "", mg: "", price: "$7" }
-          ]
-        },
-        { 
-          name: "Pink Pony", 
-          description: "Raspberry puree, lime juice, raspberry simple, syrup & berry seltzer.",
-          prices: [
-            { size: "", mg: "", price: "$8" }
-          ]
-        },
-        { 
-          name: "Blueberry Dream", 
-          description: "Blueberries, mint, blueberry simple syrup, lime juice, & soda water.",
-          prices: [
-            { size: "", mg: "", price: "$8" }
-          ]
-        },
-        { 
-          name: "Wake & Bake Martini", 
-          description: "Cold brew, hazelnut simple syrup, half & half, topped with sweet cold foam.",
-          prices: [
-            { size: "", mg: "", price: "$9" }
-          ]
-        },
-        { 
-          name: "The Italian", 
-          description: "Club soda with your choice of simple syrup. Coconut, Lime, Blueberry, Lemon, Strawberry, Raspberry, Cranberry, Vanilla, Hazelnut, Peppermint, Caramel, Butterscotch. (Add a splash of half & half or coconut milk for no charge!)",
-          prices: [
-            { size: "", mg: "", price: "$7" }
-          ]
-        }
-      ]
-    }
   ];
 
   return (
-    <div className="m-auto bg-black text-white p-8 border-2 border-SnapGreen w-4/5">
+    <div className="m-auto bg-black text-white p-8 border-2 border-SnapGreen w-5/6 rounded-lg"> {/* Added rounded-lg back */}
+      <div className="mb-8 text-center">
+        <h2 className="text-4xl uppercase tracking-wider mb-2 text-center">Summer Drink Menu</h2>
+        <p className="text-lg text-gray-300">Keep it virgin or Elevate it!</p>
+        <p className="text-md text-gray-300">Canna 10mg - $3 / 25mg - $6 / 50mg - $9</p>
+        <p className="text-md text-gray-300">Kava 100mg - $6</p>
+      </div>
       {menuSections.map((section, sectionIndex) => (
         <div key={sectionIndex} className="mb-12">
-          <h2 className="text-3xl uppercase tracking-wider mb-2 text-center">
+          <h2 className="text-3xl uppercase tracking-wider mb-4 text-center">
             {section.title}
           </h2>
           {section.subtitle && (
-            <p className="text-center text-gray-200 font-normal mb-4">{section.subtitle}<br/>{section.price}</p>
+            <p className="text-center text-gray-200 font-normal mb-4">{section.subtitle}<br />{section.price}</p>
           )}
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6">
             {section.items.map((item, itemIndex) => (
-              <div key={itemIndex} className="space-y-2">
-                <div className="border-b border-SnapGreen pb-1">
+              <div key={itemIndex} className="space-y-1">
+                <div className="border-b border-SnapGreen pb-2">
                   <div className="flex justify-between items-start">
                     <div>
-                      <h3 className="text-xl font-normal">{item.name}</h3>
+                      <h3 className="text-xl font-normal mb-1">{item.name}</h3>
                       {item.options && (
-                        <p className="text-sm text-gray-200 font-semibold mt-1">{item.options}</p>
+                        <p className="text-sm text-gray-200">{item.options}</p>
                       )}
                     </div>
                   </div>
-                  <p className="text-gray-200 text-sm font-normal">{item.description}</p>
-                  {section.title === "ON-TAP" && item.prices && (
-                    <div className="text-right text-gray-200 font-normal mt-1">
-                      {item.prices.map((price, priceIndex) => (
-                        <div key={priceIndex} className="flex justify-between">
-                          <span>{price.size && `${price.size} `}{price.price}</span>
-                          <span className="block text-sm text-gray-200 font-normal">{price.mg}</span>
-                        </div>
-                      ))}
-                    </div>
+                  {/* Using dangerouslySetInnerHTML to render HTML line breaks */}
+                  <p
+                    className="text-gray-200 text-sm font-normal mt-1"
+                    dangerouslySetInnerHTML={{ __html: item.description }}
+                  >
+                  </p>
+                  {item.kava && ( // Conditionally render kava message
+                    <p className="text-gray-300 text-sm font-normal mt-4">(Pairs well with Kava)</p>
                   )}
-                  {section.title === "LOADED SODAS" && item.prices && (
-                    <div className="text-right text-gray-200 font-normal mt-1">
-                      {item.prices.map((price, priceIndex) => (
-                        <div key={priceIndex} className="flex justify-between">
-                          <span>{price.size && `${price.size} `}{price.price}</span>
-                          <span className="block text-sm text-gray-200 font-normal">{price.mg}</span>
-                        </div>
-                      ))}
-                    </div>
-                  )}
-                  {section.title === "CANNA COCKTAILS" && item.prices && (
+                  {/* Universal price rendering for items with prices array */}
+                  {item.prices && item.prices.length > 0 && (
                     <div className="text-right text-gray-200 font-normal mt-1">
                       {item.prices.map((price, priceIndex) => (
                         <div key={priceIndex} className="flex justify-between">

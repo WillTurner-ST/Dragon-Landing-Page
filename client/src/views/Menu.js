@@ -50,23 +50,24 @@ const Menu = () => {
         {/* Divider Line */}
         <div className="border-t border-SnapGreen w-1/4 mx-auto my-8"></div>
 
-<div className="flex flex-row justify-center items-center gap-2 px-4 mb-6 overflow-x-auto">
-      <h4
-        onClick={() => scrollToSection(dabMenuRef)}
-        className="cursor-pointer text-white text-4xl sm:text-4xl md:text-4xl transform transition duration-200 hover:scale-110"
-      >
-        DABS
-      </h4>
-      {/* This span remains as it's just a separator/spacer */}
-      <span className="text-xl md:text-2xl font-light text-white px-2"></span>
-      {/* Changed <span> to <h4> for semantic heading */}
-      <h4
-        onClick={() => scrollToSection(drinkMenuRef)}
-        className="cursor-pointer text-white text-4xl sm:text-4xl md:text-4xl transform transition duration-200 hover:scale-110"
-      >
-        DRINKS
-      </h4>
-</div>
+        {/* Updated Button Container and Buttons */}
+        <div className="flex flex-row justify-center items-center gap-2 px-6 mb-6"> {/* Changed px-4 to px-6, removed overflow-x-auto */}
+          <h4
+            onClick={() => scrollToSection(dabMenuRef)}
+            className="cursor-pointer text-white text-4xl transform transition duration-200 hover:scale-110 inline-block min-w-[150px] text-center" // Added inline-block and min-w
+          >
+            DABS
+          </h4>
+          {/* This span remains as it's just a separator/spacer */}
+          <span className="text-xl md:text-2xl font-light text-white px-2"></span>
+          {/* Changed <span> to <h4> for semantic heading */}
+          <h4
+            onClick={() => scrollToSection(drinkMenuRef)}
+            className="cursor-pointer text-white text-4xl transform transition duration-200 hover:scale-110 inline-block min-w-[150px] text-center" // Added inline-block and min-w
+          >
+            DRINKS
+          </h4>
+        </div>
 
         {/* Dab Menu Section */}
         <div ref={dabMenuRef} className="pb-10"> {/* Add ref and some padding-bottom */}

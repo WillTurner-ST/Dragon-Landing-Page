@@ -82,7 +82,7 @@ export default function DabMenu() {
     <div className='flex flex-col justify-center items-center'>
       <div className='mx-auto'>
       </div>
-      <div className="m-auto bg-black text-white p-4 md:p-8 border-2 border-SnapGreen w-4/5 md:w-4/5">
+      <div className="m-auto bg-black text-white p-4 md:p-8 border-2 border-SnapGreen w-5/6 md:w-5/6">
         {/* Hardware Section */}
         <div className="mb-8">
           <h2 className="text-2xl md:text-3xl uppercase tracking-wider mb-4 text-center">
