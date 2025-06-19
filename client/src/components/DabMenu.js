@@ -22,47 +22,47 @@ export default function DabMenu() {
       items: [
         { 
           name: "Candyland (Sativa)", 
-          description: "Candyland (aka Kandyland) is a sativa concentrate with uplifting, creative effects that ease tension and boost mood. It features Caryophyllene, Limonene, and Humulene, giving it a sweet, earthy flavor with hints of spice and citrus. Great for daytime use or social vibes."
+          description: ""
         },
         { 
           name: "Jack's Delight (Sativa)", 
-          description: "A vibrant cross of Jack Herer x Afternoon Delight, Jack’s Delight brings a bright, citrusy burst up front with hints of pine, sweet funk, and a subtle floral finish. This Sativa-Dominant Hybrid delivers an energizing head high paired with a breezy body buzz — perfect for sparking creativity or starting your day with clarity. Citrus, pine, sweet, and lightly floral with dominant terpenes Terpinolene, Limonene, and Caryophyllene. "
+          description: ""
         },
         { 
           name: "Mango Crack (Sativa)", 
-          description: "a cross of Skunk #1 and an unknown pheno. Dominant in Myrcene, Pinene, and Caryophyllene. Great for enjoying anytime of day as a fuel-focused Sativa profile. Mango Crack is a terpy badder and works best with blunt or scooping dab tools."
+          description: ""
         },
         { 
           name: "Poptarts (Sativa)", 
-          description: "Crossing Sour OG Affie (SOGA) x Lemon Cake creates a sweet, lemon-frosted & bright berry profile with intense cerebral effects. Pop Tarts delivers creativity, stimulation, and euphoria in one delectable dab."
+          description: ""
         },
         { 
           name: "Dosidos (Hybrid)", 
-          description: "a potent hybrid that tends to lean more toward the Indica side. It is a cross of OG Kush Breath and Face Off OG and carries deep and delicious cookies and kush notes. It is sweet and earthy with dominant terps of Limonene, Caryophyllene, and Linalool."
+          description: ""
         },
         { 
           name: "Ghost Ryder (Hybrid)", 
-          description: "A well-balanced Hybrid with delicious lemon notes that’ll free you from the couch lock and keep you strong on the euphoria with dominant terpenes like Caryophyllene, Humulene, and Limonene."
+          description: ""
         },
                 { 
-          name: "Dark Matter (Hybrid)", 
-          description: " Cherry Thunderfuck x Rusty Haze. Dark Matter is a heavy body hitter with calming and regulating cerebral effects. Dominant in myrcene, this is a great unwinding Hybrid best suited for end of day relaxing. "
+          name: "Dark Matter (hybrid)", 
+          description: " "
         },
                 { 
-          name: "Rainbow Runtz (Hybrid)", 
-          description: "Zkittlez x Dosi Do. If you enjoy our Dosi Do then you’ll love Rainbow Runtz! Sweet, tart with pungent fuel. Great for anytime of day."
+          name: "Rainbow Runtz (hybrid)", 
+          description: ""
         },
                 { 
-          name: "Gelato 33 (Hybrid)", 
-          description: "A standout cross of Sunset Sherbet x Thin Mint GSC, Gelato #33 brings a rich burst of creamy berry sweetness with a hint of minty earth. This Balanced Hybrid is known for its smooth, euphoric lift that settles into deep, carefree relaxation. Sweet, fruity, creamy, and slightly herbal with dominant terpenes Caryophyllene, Limonene, and Humulene. "
+          name: "Gelato 33 (hybrid)", 
+          description: ""
         },
                 { 
-          name: "Cereal Milk Kush (Hybrid)", 
-          description: " A delicious cross known for its creamy sweetness and even-keeled effects, Cereal Milk Kush is a smooth, uplifting, and deeply relaxing Balanced Hybrid strain. Sweet, fruity, creamy, and slightly gassy with dominant terpenes Caryophyllene, Limonene, and Myrcene."
+          name: "Cereal Milk Kush (hybrid)", 
+          description: ""
         },
         { 
-          name: "Indigo Haze (Indica)", 
-          description: "A flavorful blend with mysterious origins, Indigo Haze delivers a smooth rush of sweet berries, fresh herbs, and a hint of floral earthiness. This Indica-Dominant Hybrid offers a dreamy headspace that gradually melts into a deep, content body relaxation. Sweet, fruity, herbal, and lightly floral with dominant terpenes Myrcene, Caryophyllene, and Linalool."
+          name: "Indigo Haze (indica)", 
+          description: ""
         }
       ]
     },
@@ -72,7 +72,7 @@ export default function DabMenu() {
       items: [
         { 
           name: "Lemon Cherry Gelato (premium)", 
-          description: "Indica-Dominant Hybrid. A blissful marriage of euphoria and flavor. The nose is fruity with fresh pine and gas background notes, dominant in Limonene and caryophyllene, with generous amounts of Bisabolol, Terpinene, and Humulene carrying bright, fruity herbal tones."
+          description: ""
         }
       ]
     },
@@ -82,7 +82,7 @@ export default function DabMenu() {
       items: [
         { 
           name: "THCA Diamonds", 
-          description: "99% pure THCA in crystalline form. These diamonds provide an intense potency boost without terpenes or other cannabinoids. The ultimate way to experience THCA."
+          description: ""
         }
       ]
     },
@@ -92,7 +92,7 @@ export default function DabMenu() {
       items: [
         { 
           name: "Lambs Bread", 
-          description: "Lamb’s Bread delivers a sweet, spicy flavor, thanks to its rich terpene profile dominated by caryophyllene, with supporting notes from myrcene and limonene. The effects are typically uplifting, energetic, and creativity-enhancing, making it a go-to for clear-headed daytime use."
+          description: ""
         }
       ]
     },
@@ -102,19 +102,19 @@ export default function DabMenu() {
       items: [
         { 
           name: "Blue Gusherz", 
-          description: "Blue Gusherz is a flavorful, balanced hybrid with heavy body effects and a euphoric twist. Born from Triangle Kush and Gelato #41, this strain combines earthy kush, sweet berry, and creamy gas into one smooth, satisfying experience."
+          description: ""
         },
         { 
           name: "Jelly Donutz", 
-          description: "Jelly Donutz is a face-melting, high-energy sativa-dominant hybrid that delivers an explosion of fruity sweetness and unstoppable creative energy. With lineage from White Runtz, Hella Jelly, and two standout Jelly Donutz phenos, this strain brings bold flavor and serious uplift."
+          description: ""
         },
                 { 
           name: "White Trufflez", 
-          description: "White Trufflez is a knockout indica-dominant hybrid that leans heavily into earthy, musky aromas with a powerful sedative edge. This phenotype of Gorilla Butter delivers dense, trichome-coated buds and an aroma of rich soil, garlic, and funk."
+          description: ""
         },
                 { 
           name: "Mandarin Cookies", 
-          description: "Mandarin Cookies is an incredibly uplifting strain that has a sharp and tangy citrus citrus flavor rounded out by sweet and earthy Kush notes. Rich nutty and herbal flavors with citrus and spice makes Mandarin Cookies a mouthwatering dab."
+          description: ""
         },
       ]
     },
