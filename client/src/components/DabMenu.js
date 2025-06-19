@@ -18,7 +18,7 @@ export default function DabMenu() {
     },
     {
       title: "HOUSE CONCENTRATES",
-      price: [".05g $2.99 | .10g $6 | .20g $10 | .30g $14"],
+      price: [".05g $3 | .10g $6 | .20g $10 | .30g $14"],
       items: [
         { 
           name: "Candyland (Sativa)", 
@@ -68,7 +68,7 @@ export default function DabMenu() {
     },
     {
       title: "PREMIUM CONCENTRATES",
-      price: ["0.05g - $3.99 | 0.1g - $7.99 | 0.20g - $12 | 0.30g - $16"],
+      price: ["0.05g - $4 | 0.1g - $8| 0.20g - $12 | 0.30g - $16"],
       items: [
         { 
           name: "Lemon Cherry Gelato (premium)", 
@@ -78,7 +78,7 @@ export default function DabMenu() {
     },
     {
       title: "DIAMONDS",
-      price: ["0.05g - $5.99 | 0.10g - $12 | 0.20g - $15 | 0.30g - $20"],
+      price: ["0.05g - $6 | 0.10g - $12 | 0.20g - $15 | 0.30g - $20"],
       items: [
         { 
           name: "THCA Diamonds", 
@@ -88,7 +88,7 @@ export default function DabMenu() {
     },
     {
       title: "Saucy DIAMONDS",
-      price: ["0.05g - $5.99 | 0.10g - $12 | 0.20g - $15 | 0.30g - $20"],
+      price: ["0.05g - $6 | 0.10g - $12 | 0.20g - $15 | 0.30g - $20"],
       items: [
         { 
           name: "Lambs Bread", 
@@ -98,7 +98,7 @@ export default function DabMenu() {
     },
         {
       title: "Rosin",
-      price: ["0.05g - $5.99 | 0.10g - $12"],
+      price: ["0.05g - $6 | 0.10g - $12"],
       items: [
         { 
           name: "Blue Gusherz", 
