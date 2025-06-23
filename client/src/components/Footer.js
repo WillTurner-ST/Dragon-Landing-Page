@@ -40,7 +40,7 @@ const Footer = () => {
         </div>
         <hr className="my-6 border-gray-600 sm:mx-auto lg:my-8" />
         <div className="sm:flex sm:items-center sm:justify-between">
-          <span className="text-sm text-white sm:text-center">© 2024 <a href="https://snapdragonhemp.com" className="hover:underline">The Dragon™</a>. All Rights Reserved.</span>
+          <span className="text-sm text-white sm:text-center">© 2025 <a href="https://snapdragonhemp.com" className="hover:underline">The Dragon™</a>. All Rights Reserved.</span>
           <div className="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
             <img src={Age} alt="21+" className="w-8 h-8"/>
           <a href="https://www.facebook.com/profile.php?id=61554470425520&mibextid=kFxxJD" className="text-white hover:text-white dark:hover:text-white">
