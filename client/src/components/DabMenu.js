@@ -71,7 +71,7 @@ export default function DabMenu() {
       price: ["0.05g - $4 | 0.1g - $8| 0.20g - $12 | 0.30g - $16"],
       items: [
         { 
-          name: "Lemon Cherry Gelato (premium)", 
+          name: "", 
           description: ""
         }
       ]
