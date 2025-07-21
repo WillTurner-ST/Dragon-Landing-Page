@@ -40,35 +40,36 @@ export default function LandingPage() {
           <hr className="border-t-2 border-SnapGreen my-16 md:my-24 animate-fade-in animate-pulse-green" /> {/* Fade-in and pulse animation */}
 
           {/* Menu Selection Section */}
-          <section className="text-center my-16 md:my-24 animate-fade-in-up delay-300"> {/* Added fade-in-up with delay */}
-            <h2 className="text-7xl md:text-7xl mb-10 text-white tracking-wide drop-shadow-lg"> {/* Larger, bolder, white text with shadow */}
-              MENUS
-            </h2>
-            <div className="flex flex-col md:flex-row justify-center items-center gap-8">
-
-              <Link
-                to="/menu/broad-street" // Link to Broad St menu page
-                // Increased text size to 3xl/4xl and added drop-shadow-md for perceived weight
-                className="inline-block bg-black text-white font-bold text-3xl md:text-4xl px-10 py-5 rounded-full shadow-xl hover:bg-SnapGreenDark transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-2xl min-w-[280px] drop-shadow-md"
-              >
-                Broad St
-              </Link>
-              <Link
-                to="/menu/store-dab-bar" // Link to Store Dab Bars menu page
-                // Increased text size to 3xl/4xl and added drop-shadow-md for perceived weight
-                className="inline-block bg-black text-white font-bold text-3xl md:text-4xl px-10 py-5 rounded-full shadow-xl hover:bg-SnapGreenDark transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-2xl min-w-[280px] drop-shadow-md"
-              >
-                Store Dab Bars
-              </Link>
-                            <Link
-                to="/menu/east-brainerd" // Link to East Brainerd menu page
-                // Increased text size to 3xl/4xl and added drop-shadow-md for perceived weight
-                className="inline-block bg-black text-white font-bold text-3xl md:text-4xl px-10 py-5 rounded-full shadow-xl hover:bg-SnapGreenDark transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-2xl min-w-[280px] drop-shadow-md"
-              >
-                East Brainerd <span className="font-light text-xl">(Coming Soon)</span>
-              </Link>
-            </div>
-          </section>
+<section className="text-center my-16 md:my-24 animate-fade-in-up delay-300">
+  {/* The 'text-center' on the section already centers inline and block elements within it */}
+  <h2 className="text-7xl md:text-7xl mb-10 text-white tracking-wide drop-shadow-lg">
+    MENUS
+  </h2>
+  <div className="flex flex-col md:flex-row justify-center items-center gap-8">
+    {/* These classes will center the items within this flex container */}
+    <div>
+    <Link
+      to="/menu/broad-street"
+      className="inline-block bg-black text-white font-bold text-3xl md:text-4xl px-10 py-5 rounded-full shadow-xl hover:bg-SnapGreenDark transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-2xl min-w-[280px] drop-shadow-md"
+    >Broad St
+    </Link>
+    </div>
+    <div>
+    <Link
+      to="/menu/store-dab-bar"
+      className="inline-block bg-black text-white font-bold text-3xl md:text-4xl px-10 py-5 rounded-full shadow-xl hover:bg-SnapGreenDark transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-2xl min-w-[280px] drop-shadow-md"
+    >Store Dab Bars
+    </Link>
+    </div>
+    <div>
+    <Link
+      to="/menu/east-brainerd"
+      className="inline-block bg-black text-white font-bold text-3xl md:text-4xl px-10 py-5 rounded-full shadow-xl hover:bg-SnapGreenDark transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-2xl min-w-[280px] drop-shadow-md"
+    >East Brainerd <span className="font-light text-xl">(Coming Soon)</span>
+    </Link>
+    </div>
+  </div>
+</section>
 
         </div>
 

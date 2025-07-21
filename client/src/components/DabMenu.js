@@ -21,10 +21,6 @@ export default function DabMenu() {
       price: [".05g $3 | .10g $6 | .20g $10 | .30g $14"],
       items: [
         { 
-          name: "Candyland (Sativa)", 
-          description: ""
-        },
-        { 
           name: "Jack's Delight (Sativa)", 
           description: ""
         },
