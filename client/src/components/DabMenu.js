@@ -41,23 +41,31 @@ export default function DabMenu() {
           description: ""
         },
                 { 
-          name: "Dark Matter (hybrid)", 
+          name: "Dark Matter (Hybrid)", 
           description: " "
         },
                 { 
-          name: "Rainbow Runtz (hybrid)", 
+          name: "Rainbow Runtz (Hybrid)", 
           description: ""
         },
                 { 
-          name: "Gelato 33 (hybrid)", 
+          name: "Gelato 33 (Hybrid)", 
           description: ""
         },
                 { 
-          name: "Cereal Milk Kush (hybrid)", 
+          name: "Cereal Milk Kush (Hybrid)", 
+          description: ""
+        },
+                        { 
+          name: "Death Star (Indica)", 
           description: ""
         },
         { 
-          name: "Indigo Haze (indica)", 
+          name: "Indigo Haze (Indica)", 
+          description: ""
+        },
+                                { 
+          name: "Extreme Cream (Indica-Dominant Hybrid)", 
           description: ""
         }
       ]
