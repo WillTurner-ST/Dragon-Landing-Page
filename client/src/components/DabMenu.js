@@ -56,10 +56,6 @@ export default function DabMenu() {
           name: "Cereal Milk Kush (Hybrid)", 
           description: ""
         },
-                        { 
-          name: "Death Star (Indica)", 
-          description: ""
-        },
         { 
           name: "Indigo Haze (Indica)", 
           description: ""
