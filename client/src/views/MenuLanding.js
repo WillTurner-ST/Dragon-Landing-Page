@@ -4,7 +4,6 @@ import Footer from '../components/Footer'; // Import your Footer component
 import NavMain from '../components/NavMain'; // Import your NavMain component
 import { Link } from 'react-router-dom'; // Assuming you are using React Router for navigation
 import CTA1 from '../assets/Rins9CTA.png'; // Import your CTA image
-import CTA2 from '../assets/Rins9CTA2.png'; // Import your second CTA image
 
 export default function LandingPage() {
   return (
