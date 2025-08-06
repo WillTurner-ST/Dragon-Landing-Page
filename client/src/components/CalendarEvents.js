@@ -107,7 +107,7 @@ const CalendarEvents = () => {
               className="bg-[#0D0D0D] p-5 rounded-lg shadow-md mb-4 border border-[#5f6813] hover:shadow-lg transform transition hover:-translate-y-1 cursor-pointer"
               onClick={() => openModal(event)}
             >
-              <h2 className="text-2xl mb-2 text-white">{event.summary}</h2>
+              <h2 className="text-3xl mb-2 text-white tracking-wide">{event.summary}</h2>
               <p className="text-white font-normal text-base">
                 {formatTime(event.start.dateTime || event.start.date)} -{" "}
                 {formatTime(event.end.dateTime || event.end.date)}

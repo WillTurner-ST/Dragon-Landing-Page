@@ -3,6 +3,7 @@ import StoreDabMenu from "../components/StoreDabMenu";
 import NavMain from "../components/NavMain";
 import Footer from "../components/Footer";
 import { useEffect } from "react";
+import CTA from "../components/CTA"; // Importing CTA component if needed
 
 const StoreMenu = () => {
   useEffect(() => {
@@ -15,6 +16,7 @@ const StoreMenu = () => {
       <NavMain />
       <div className="pt-52">
         <StoreDabMenu />
+        <CTA/>
       </div>
       <Footer />
     </div>

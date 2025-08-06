@@ -1,6 +1,8 @@
 import React from "react";
 import Age from '../assets/21+.png'
 import Logo from '../assets/Dragon_Logo.png'
+import { Link } from 'react-router-dom';
+import CTA1 from '../assets/Rins9CTA.png'; // Import your CTA imag
 const Footer = () => {
   return (
 
@@ -52,6 +54,27 @@ const Footer = () => {
           </div>
         </div>
       </div>
+       {/* Delivery CTA Section */}
+                <section className="my-16 md:my-24 animate-fade-in-up delay-500">
+                  <Link
+                    to="https://www.rins9.com" // Update this to your actual delivery page route
+                    className="block w-full group"
+                  >
+                    <div className="relative overflow-hidden rounded-2xl shadow-2xl">
+                      <img 
+                        src={CTA1} // Update this to your actual image path
+                        alt="Cannabis delivery service"
+                        className="w-full h-auto object-cover transition-all duration-500 ease-in-out group-hover:scale-105 group-hover:brightness-110"
+                        style={{
+                          aspectRatio: '1000/400',
+                          maxHeight: '00px'
+                        }}
+                      />
+                      {/* Optional hover overlay for enhanced interactivity */}
+                      <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all duration-500 ease-in-out"></div>
+                    </div>
+                  </Link>
+                </section>
     </footer>
 
   );

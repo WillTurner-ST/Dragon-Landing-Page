@@ -3,6 +3,7 @@ import DabMenu from "../components/DabMenu";
 import NavMain from "../components/NavMain";
 import Footer from "../components/Footer";
 import DrinkMenu from "../components/DrinkMenu";
+import CTA from "../components/CTA";
 
 const Menu = () => {
   // Create refs for each menu section
@@ -74,6 +75,8 @@ const Menu = () => {
           <DabMenu />
         </div>
 
+        <CTA/>
+        
         {/* Drink Menu Section */}
         <div ref={drinkMenuRef} className="mt-10 pb-10"> {/* Add ref, margin-top, and padding-bottom */}
           <DrinkMenu />
