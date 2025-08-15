@@ -32,6 +32,10 @@ export default function DabMenu() {
           name: "Poptarts (Sativa)", 
           description: ""
         },
+                { 
+          name: "Durban Poison (Sativa)", 
+          description: ""
+        },
         { 
           name: "Dosidos (Hybrid)", 
           description: ""
@@ -58,6 +62,10 @@ export default function DabMenu() {
         },
         { 
           name: "Indigo Haze (Indica)", 
+          description: ""
+        },
+                { 
+          name: "Death Star (Indica)", 
           description: ""
         },
                                 { 
