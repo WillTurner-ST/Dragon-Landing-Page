@@ -108,6 +108,18 @@ export default function DabMenu() {
           name: "White Trufflez", 
           description: ""
         },
+                        { 
+          name: "Skywalker", 
+          description: ""
+        },
+                        { 
+          name: "Chem De La Chem", 
+          description: ""
+        },
+                        { 
+          name: "Papaya", 
+          description: ""
+        },
                 { 
           name: "Mandarin Cookies", 
           description: ""
