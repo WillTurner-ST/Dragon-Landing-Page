@@ -24,14 +24,6 @@ export default function DabMenu() {
           name: "Jack's Delight (Sativa)", 
           description: ""
         },
-        { 
-          name: "Mango Crack (Sativa)", 
-          description: ""
-        },
-        { 
-          name: "Poptarts (Sativa)", 
-          description: ""
-        },
                 { 
           name: "Durban Poison (Sativa)", 
           description: ""
@@ -62,10 +54,6 @@ export default function DabMenu() {
         },
         { 
           name: "Indigo Haze (Indica)", 
-          description: ""
-        },
-                { 
-          name: "Death Star (Indica)", 
           description: ""
         },
                                 { 
