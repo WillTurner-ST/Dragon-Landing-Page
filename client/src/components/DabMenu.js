@@ -5,7 +5,6 @@ export default function DabMenu() {
     {
       title: "PICK YOUR PIECE",
       items: [
-        { name: "OLA FILTER/CART", price: "$3" },
         { name: "PUFFCO PROXY", price: "$5" },
         { name: "CROSSING CORE 2.1", price: "$5" },
         { name: "PUFFCO PEAK PRO", price: "$10" },
@@ -29,10 +28,6 @@ export default function DabMenu() {
           description: ""
         },
         { 
-          name: "Dosidos (Hybrid)", 
-          description: ""
-        },
-        { 
           name: "Ghost Ryder (Hybrid)", 
           description: ""
         },
@@ -48,16 +43,28 @@ export default function DabMenu() {
           name: "Gelato 33 (Hybrid)", 
           description: ""
         },
+        {
+          name: "Girl Scout Cookies (Hybrid)",
+          description: ""
+        },
                 { 
           name: "Cereal Milk Kush (Hybrid)", 
           description: ""
         },
-        { 
-          name: "Indigo Haze (Indica)", 
+        {
+          name: "Extreme Cream (Indica-Dominant Hybrid)",
           description: ""
         },
-                                { 
-          name: "Extreme Cream (Indica-Dominant Hybrid)", 
+        {
+          name: "Indigo Haze (Indica)",
+          description: ""
+        },
+        {
+          name: "Wedding Cake (Indica)",
+          description: ""
+        },
+        {
+          name: "Rainbow Sherbert #11 (Indica)",
           description: ""
         }
       ]
