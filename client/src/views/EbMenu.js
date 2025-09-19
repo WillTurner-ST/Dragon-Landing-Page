@@ -1,5 +1,5 @@
 import React from "react";
-//import EBDrinkMenu from "../components/EBDrinkMenu";
+import EBDrinkMenu from "../components/EBDrinkMenu";
 import EBDabMenu from "../components/EBDabMenu";
 import NavMain from "../components/NavMain";
 import Footer from "../components/Footer";
@@ -82,7 +82,8 @@ import CTA from "../components/CTA";
         
         {/* Drink Menu Section */}
         <div ref={drinkMenuRef} className="mt-10 pb-10"> {/* Add ref, margin-top, and padding-bottom */}
-          {/*<EBDrinkMenu />*/}
+          <EBDrinkMenu />
+
         </div>
       </div>
       <Footer />

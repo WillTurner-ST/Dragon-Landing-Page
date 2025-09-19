@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import DOMPurify from "dompurify"; // Import DOMPurify for sanitization
+import DOMPurify from "dompurify";
 
-const CalendarEvents = () => {
+const CalendarEventsEB = () => {
   const [events, setEvents] = useState([]);
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [selectedEvent, setSelectedEvent] = useState(null);
@@ -9,34 +9,32 @@ const CalendarEvents = () => {
   const API_KEY = process.env.REACT_APP_GOOGLE_CALENDAR_API_KEY;
   const CALENDAR_ID = process.env.REACT_APP_GOOGLE_CALENDAR_ID;
 
-  // Downtown address
-  const DT_ADDRESS = "508 Broad St, Chattanooga, TN 37402, USA";
+  const EB_ADDRESS = "7655 E Brainerd Rd, Chattanooga, TN 37421";
 
+  // --- Fetch Events ---
   useEffect(() => {
     const fetchEvents = async () => {
       try {
         const nowIso = new Date().toISOString();
         const url =
-          `https://www.googleapis.com/calendar/v3/calendars/${encodeURIComponent(
-            CALENDAR_ID
-          )}/events` +
+          `https://www.googleapis.com/calendar/v3/calendars/${encodeURIComponent(CALENDAR_ID)}/events` +
           `?key=${API_KEY}` +
-          `&singleEvents=true` + // expand recurring events
-          `&orderBy=startTime` + // sorted chronologically
-          `&timeMin=${encodeURIComponent(nowIso)}`; // only upcoming
+          `&singleEvents=true` +
+          `&orderBy=startTime` +
+          `&timeMin=${encodeURIComponent(nowIso)}`;
 
         const response = await fetch(url);
         const data = await response.json();
 
         if (data.items) {
-          // Keep only events at the Downtown address
-          const downtownEvents = data.items.filter(
+          // Filter only events at EB address
+          const ebEvents = data.items.filter(
             (event) =>
               event.location &&
-              event.location.toLowerCase().includes(DT_ADDRESS.toLowerCase())
+              event.location.toLowerCase().includes(EB_ADDRESS.toLowerCase())
           );
 
-          setEvents(downtownEvents);
+          setEvents(ebEvents);
         }
       } catch (error) {
         console.error("Error fetching events: ", error);
@@ -46,6 +44,7 @@ const CalendarEvents = () => {
     fetchEvents();
   }, [API_KEY, CALENDAR_ID]);
 
+  // --- Helpers ---
   const formatDate = (dateTime) =>
     new Date(dateTime).toLocaleDateString("en-US", {
       timeZone: "America/New_York",
@@ -77,9 +76,12 @@ const CalendarEvents = () => {
     return matches ? matches[0].replace(/"$/, "") : null;
   };
 
+  // --- Modal Controls ---
   const openModal = (event) => {
     const cleanedDescription = event.description
-      ? event.description.replace(/(https?:\/\/[^\s]+)/g, "").trim()
+      ? event.description
+          .replace(/(https?:\/\/[^\s]+)/g, "")
+          .trim()
       : "";
 
     const ticketURL = extractTicketURL(event.description);
@@ -94,11 +96,10 @@ const CalendarEvents = () => {
 
   const groupedEvents = groupEventsByDate(events);
 
+  // --- Render ---
   return (
     <div className="bg-black text-white flex flex-col items-center py-8 px-4">
-      <h2 className="text-4xl mb-10 text-center">
-        Upcoming Events
-      </h2>
+      <h2 className="text-4xl mb-10 text-center">Upcoming Events</h2>
 
       {Object.entries(groupedEvents).map(([date, events]) => (
         <div key={date} className="w-full max-w-6xl mb-8">
@@ -112,9 +113,7 @@ const CalendarEvents = () => {
               className="bg-[#0D0D0D] p-5 rounded-lg shadow-md mb-4 border border-[#5f6813] hover:shadow-lg transform transition hover:-translate-y-1 cursor-pointer"
               onClick={() => openModal(event)}
             >
-              <h2 className="text-3xl mb-2 text-white tracking-wide">
-                {event.summary}
-              </h2>
+              <h2 className="text-3xl mb-2 text-white tracking-wide">{event.summary}</h2>
               <p className="text-white font-normal text-base">
                 {formatTime(event.start.dateTime || event.start.date)} –{" "}
                 {formatTime(event.end.dateTime || event.end.date)}
@@ -183,4 +182,4 @@ const CalendarEvents = () => {
   );
 };
 
-export default CalendarEvents;
+export default CalendarEventsEB;
