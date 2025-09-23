@@ -82,13 +82,13 @@ const Location = () => {
       description: "The Dragon is East Brainerd’s premier Dab & Drink Lounge, offering a unique blend of cannabis-related products, craft drinks, and a laid-back atmosphere. With a convenient drive-thru, a stylish indoor lounge, and scenic outdoor seating, The Dragon is the perfect spot to unwind. Enjoy the vibe surrounded by hand-painted custom walls that make every visit an experience.",
       phone: "(423) 555-5678",
       hours: {
-        sunday: "COMING SOON!",
-        monday: "COMING SOON!",
-        tuesday: "COMING SOON!",
-        wednesday: "COMING SOON!",
-        thursday: "COMING SOON!",
-        friday: "COMING SOON!",
-        saturday: "COMING SOON!"
+        sunday: "9:00am - 9:00pm",
+        monday: "9:00am - 9:00pm",
+        tuesday: "9:00am - 9:00pm",
+        wednesday: "9:00am - 9:00pm",
+        thursday: "9:00am - 9:00pm",
+        friday: "9:00am - 10:00pm",
+        saturday: "9:00am - 10:00pm"
       },
       menuLink: "/menu/east-brainerd"
     }
