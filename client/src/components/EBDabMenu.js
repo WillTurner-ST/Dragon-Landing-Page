@@ -20,7 +20,7 @@ export default function EBDabMenu() {
       ]
     },
     {
-      title: "DIAMONDS & Hasg Rosin",
+      title: "DIAMONDS & Hash Rosin",
       price: ["0.05g - $6 | 0.10g - $12 | 0.20g - $15 | 0.30g - $20"],
       items: [
         { name: "THCA Diamonds", description: "" },
