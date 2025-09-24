@@ -6,6 +6,7 @@ export default function EBDabMenu() {
         { name: "OLA Filter", price: "$3" },
         { name: "PUFFCO PROXY", price: "$5" },
         { name: "CROSSING CORE 2.2", price: "$5" },
+        { name: "Puffco Peak", price: "$8" },
         { name: "PUFFCO PEAK PRO", price: "$10" },
         { name: "E-NAIL", price: "$10" }
       ]
