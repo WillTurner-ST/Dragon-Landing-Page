@@ -61,7 +61,7 @@ const Location = () => {
       coordinates: [35.05065299238722, -85.31039832638582],
       image: DowntownImage,
       description: "The Dragon on Broad Street is a unique Dab & Drink Lounge in the heart of downtown, offering premium cannabis-related products and craft drinks in a stylish, relaxed setting. With a cozy indoor lounge, it’s the perfect spot to unwind and enjoy the vibe.",
-      phone: "(423) 555-1234",
+      phone: "(423)-954-0710",
       hours: {
         sunday: "12:00 PM - 10:00 PM",
         monday: "12:00 PM - 10:00 PM",
@@ -80,7 +80,7 @@ const Location = () => {
       coordinates: [35.01197267821825, -85.15634644692537],
       image: UptownImage,
       description: "The Dragon is East Brainerd’s premier Dab & Drink Lounge, offering a unique blend of cannabis-related products, craft drinks, and a laid-back atmosphere. With a convenient drive-thru, a stylish indoor lounge, and scenic outdoor seating, The Dragon is the perfect spot to unwind. Enjoy the vibe surrounded by hand-painted custom walls that make every visit an experience.",
-      phone: "(423) 555-5678",
+      phone: "(423)-678-0420",
       hours: {
         sunday: "9:00am - 9:00pm",
         monday: "9:00am - 9:00pm",
