@@ -17,6 +17,8 @@ export default function EBDabMenu() {
       items: [
         { name: "Durban Poison (Sativa)", description: "" },
         { name: "Girl Scout Cookies (Hybrid)", description: "" },
+        { name: "Chem Dawg (Hybrid)", description: "" },
+        { name: "Kosher Kush (Indica)", description: "" },
         { name: "Wedding Cake (Indica)", description: "" }
       ]
     },
@@ -26,10 +28,12 @@ export default function EBDabMenu() {
       items: [
         { name: "THCA Diamonds", description: "" },
         { name: "Saucy Diamonds", description: "" },
-        { name: "Modified Grapes Hash Rosin", description: "" },
-        { name: "Headband Haze Hash Rosin", description: "" },
-        { name: "Papaya Hash Rosin", description: "" },
-        { name: "Chem de la Chem Hash Rosin", description: "" },        
+        { name: "Headband Haze Hash Rosin (Sativa)", description: "" },
+        { name: "Chem de la Chem Hash Rosin (Sativa)", description: "" },
+        { name: "Modified Grapes Hash Rosin (Hybrid)", description: "" },
+        { name: "Peach Rings Hash Rosin (Hybrid)", description: "" },     
+        { name: "Strawberry Cooler Hash Rosin (Hybrid)", description: "" },
+        { name: "Papaya Hash Rosin (Indica)", description: "" },             
       ]
     },
   ];
