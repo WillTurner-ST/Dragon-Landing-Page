@@ -34,13 +34,6 @@ export default function DrinkMenu() {
             { size: "", mg: "", price: "" },
           ]
         },
-        {
-          name: "Watermelon Sugar High - $7",
-          description: "Watermelon, Agave Syrup, Lime Juice, Club Soda, Rock Candy",
-          prices: [
-            { size: "", mg: "", price: "" },
-          ]
-        },
       ]
     },
     {
