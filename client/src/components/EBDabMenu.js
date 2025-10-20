@@ -15,11 +15,11 @@ export default function EBDabMenu() {
       title: "HOUSE CONCENTRATES",
       price: [".05g $3 | .10g $6 | .20g $10 | .30g $14"],
       items: [
-        { name: "Durban Poison (Sativa)", description: "" },
-        { name: "Girl Scout Cookies (Hybrid)", description: "" },
-        { name: "Chem Dawg (Hybrid)", description: "" },
-        { name: "Kosher Kush (Indica)", description: "" },
-        { name: "Wedding Cake (Indica)", description: "" }
+        { name: "Candy Land (Sativa)", description: "" },
+        { name: "Jack's Delight (Sativa)", description: "" },
+        { name: "Rainbow Runtz (Hybrid)", description: "" },
+        { name: "Blue Cookies (Indica)", description: "" },
+        { name: "Dark Matter (Indica)", description: "" }
       ]
     },
     {
@@ -28,12 +28,17 @@ export default function EBDabMenu() {
       items: [
         { name: "THCA Diamonds", description: "" },
         { name: "Saucy Diamonds", description: "" },
+        { name: "Jelly Donutz Hash Rosin ( Sativa)", description: "" },
         { name: "Headband Haze Hash Rosin (Sativa)", description: "" },
-        { name: "Chem de la Chem Hash Rosin (Sativa)", description: "" },
+        { name: "Chem de le Chem Hash Rosin (Sativa)", description: "" },
+        { name: "Skywalker OG Hash Rosin (Hybrid)", description: "" },
         { name: "Modified Grapes Hash Rosin (Hybrid)", description: "" },
-        { name: "Peach Rings Hash Rosin (Hybrid)", description: "" },     
+        { name: "Peach Ringz Hash Rosin (Hybrid)", description: "" },
         { name: "Strawberry Cooler Hash Rosin (Hybrid)", description: "" },
-        { name: "Papaya Hash Rosin (Indica)", description: "" },             
+        { name: "Melted Strawberries Hash Rosin (Hybrid)", description: "" },
+        { name: "Blue Gusherz Hash Rosin (Hybrid)", description: "" },
+        { name: "White Trufflez Hash Rosin (Indica)", description: "" },
+        { name: "Papaya Hash Rosin (Indica)", description: "" },
       ]
     },
   ];
