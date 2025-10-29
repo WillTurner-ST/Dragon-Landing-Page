@@ -83,10 +83,10 @@ const Location = () => {
       phone: "(423)-678-0420",
       hours: {
         sunday: "9:00am - 9:00pm",
-        monday: "9:00am - 9:00pm",
-        tuesday: "9:00am - 9:00pm",
-        wednesday: "9:00am - 9:00pm",
-        thursday: "9:00am - 9:00pm",
+        monday: "9:00am - 10:00pm",
+        tuesday: "9:00am - 10:00pm",
+        wednesday: "9:00am - 10:00pm",
+        thursday: "9:00am - 10:00pm",
         friday: "9:00am - 10:00pm",
         saturday: "9:00am - 10:00pm"
       },
